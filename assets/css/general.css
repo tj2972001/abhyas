@@ -1,0 +1,57 @@
+li {
+  list-style: none;
+}
+.listOutcomes > * {
+  margin-top: 5px;
+}
+.sectionContents {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.searchBar {
+  display: inline-block;
+  border: 2px solid #212f5a;
+  border-radius: 40px;
+  padding: 2px;
+  margin: 3px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.navItem {
+  margin: 10px;
+}
+
+.roundedImg {
+  border: none;
+  border-radius: 50%;
+}
+h3 {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #35a1e9 0%, #1f31d3 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ratingsBlock {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+}
+.ratingsBlock > * {
+  margin-right: 4px;
+}
+
+.ratingNumber {
+  color: rgb(233, 211, 13);
+  font-size: 20px;
+  font-weight: bold;
+}
+.courseHeading {
+  font-size: 30px;
+  letter-spacing: -0.25px;
+  font-weight: 700;
+}
