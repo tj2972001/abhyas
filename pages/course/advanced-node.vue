@@ -4,39 +4,41 @@
       <v-col cols="12" md="8">
         <v-row class="black py-10 pl-2 white--text">
           <v-col cols="12">
-            <h4 class="courseHeading">Node JS: Advanced Concepts</h4>
-            <div class="font-weight-medium text-subtitle-1">
+            <h4 class="white--text text-h4 font-weight-bold">
+              Node JS: Advanced Concepts
+            </h4>
+            <div class="font-weight-medium text-subtitle-1 mt-3">
               Get advanced with Node.Js! Learn caching with Redis, speed up
               through clustering, and add image upload with S3 and Node!
             </div>
-            <div class="mt-5">
-              <span style="color: #d49b1e" class="text-subtitle-1 pr-3">
+            <div class="mt-5 d-flex justify-space-around justify-sm-start">
+              <span style="color: #d49b1e" class="text-subtitle-1 pa-2">
                 4.7 ratings
               </span>
               <v-rating
                 v-model="rating"
-                class="pr-3"
+                class="pa-2"
                 style="display: inline-block"
                 readonly
                 dense
                 color="#d49b1e"
                 half-increments
               ></v-rating>
-              <span class="text-subtitle-1">243455 students</span>
+              <span class="text-subtitle-1 pa-2">243455 students</span>
             </div>
-            <span class="mt-2"
-              >Created by <nuxt-link to="/">Stphan Grider</nuxt-link></span
-            >
-            <div class="mt-3">
-              <div class="pa-1">
+            <div class="mt-2">
+              Created by <nuxt-link to="/">Stphan Grider</nuxt-link>
+            </div>
+            <div class="mt-3 d-md-flex">
+              <div class="mr-md-3 py-2 py-md-0">
                 <v-icon color="#fff">mdi-exclamation</v-icon> Last updated :
                 september 2020
               </div>
-              <div class="pa-1">
+              <div class="mr-md-3 py-2 py-md-0">
                 <v-icon class="mr-1" color="#fff">mdi-web</v-icon> English
               </div>
             </div>
-            <div class="mt-5">
+            <div class="mt-5 d-flex flex-column flex-md-row">
               <v-btn color="#fff" class="ma-2" outlined>
                 Wishlist
                 <v-icon>mdi-heart</v-icon></v-btn
@@ -51,7 +53,7 @@
             </div>
           </v-col>
         </v-row>
-        <v-card class="mt-5 ma-0 pa-3">
+        <v-card class="mt-5 ma-0 pa-1 pa-md-3">
           <v-card-title
             class="text--primary text-h4 font-weight-bold"
             style="word-break: keep-all"
@@ -59,7 +61,7 @@
           >
           <v-row>
             <v-col cols="12" md="6">
-              <ul class="listOutcomes">
+              <ul>
                 <li>
                   <v-icon class="pa-1">mdi-check</v-icon>
                   Absolutely master the Event Loop and understand each of its
@@ -82,7 +84,7 @@
               </ul>
             </v-col>
             <v-col cols="12" md="6">
-              <ul class="listOutcomes">
+              <ul>
                 <li>
                   <v-icon class="pa-1">mdi-check</v-icon>
                   Absolutely master the Event Loop and understand each of its
@@ -246,7 +248,61 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-col cols="12" md="4"> </v-col>
+      <v-col cols="12" md="4" class="d-flex justify-center">
+        <v-card class="mt-10" width="400" max-width="90%" height="max-content">
+          <video
+            src="/delicate.mp4"
+            controls
+            poster="/tejasfb.jpg"
+            width="100%"
+            height="auto"
+          ></video>
+          <v-card-title class="d-flex">
+            <div class="text-h4 mr-4 font-weight-bold">$499</div>
+            <div
+              class="text-subtitle-1 mr-4 text-decoration-line-through font-weight-medium"
+            >
+              $1200
+            </div>
+            <div class="text-subtitle-2 text--secondary font-weight-medium">
+              95% off
+            </div></v-card-title
+          >
+          <v-card-actions class="d-flex flex-column">
+            <v-btn width="80%" class="white--text" color="pink lighten-1">
+              Buy Now</v-btn
+            >
+            <v-btn width="80%" class="mt-3" color="pink lighten-1" outlined>
+              Add to cart</v-btn
+            >
+          </v-card-actions>
+          <div class="font-weight-medium text--secondary text-body-1 pl-3 mt-4">
+            This course includes
+          </div>
+          <v-card-actions class="d-flex flex-column text-body-2 align-start">
+            <div class="d-flex mt-2">
+              <v-icon small class="px-3">mdi-television-play</v-icon>
+              <div>12 hrs of on-demand video</div>
+            </div>
+            <div class="d-flex mt-2">
+              <v-icon small class="px-3">mdi-clipboard-text-outline</v-icon>
+              <div>70 articles</div>
+            </div>
+            <div class="d-flex mt-2">
+              <v-icon small class="px-3">mdi-folder-download-outline</v-icon>
+              <div>20 downloadable resources</div>
+            </div>
+            <div class="d-flex mt-2">
+              <v-icon small class="px-3">mdi-infinity</v-icon>
+              <div>full lifetime access</div>
+            </div>
+            <div class="d-flex mt-2">
+              <v-icon small class="px-3">mdi-certificate</v-icon>
+              <div>Certificate of completion</div>
+            </div>
+          </v-card-actions>
+        </v-card>
+      </v-col>
     </v-row>
   </v-container>
 </template>

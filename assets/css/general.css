@@ -1,9 +1,7 @@
 li {
   list-style: none;
 }
-.listOutcomes > * {
-  margin-top: 5px;
-}
+
 .sectionContents {
   display: flex;
   justify-content: flex-start;
@@ -49,9 +47,4 @@ h3 {
   color: rgb(233, 211, 13);
   font-size: 20px;
   font-weight: bold;
-}
-.courseHeading {
-  font-size: 30px;
-  letter-spacing: -0.25px;
-  font-weight: 700;
 }
