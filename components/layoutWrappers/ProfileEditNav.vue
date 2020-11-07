@@ -1,7 +1,9 @@
 <template>
   <div>
-    <div class="mt-10 mb-3 text-h4 font-weight-bold">Account Settings</div>
-    <v-sheet class="mx-auto mt-10" max-width="95%">
+    <div class="mt-10 mb-3 text-h4 text-md-h3 font-weight-bold black--text">
+      Account Settings
+    </div>
+    <v-sheet class="mx-auto mt-10">
       <v-slide-group multiple show-arrows>
         <v-slide-item v-for="option in profileEditOptions" :key="option.name">
           <v-btn
@@ -12,6 +14,7 @@
             rounded
             :to="`${option.link}`"
           >
+            <v-icon class="px-1">{{ option.icon }}</v-icon>
             {{ option.name }}
           </v-btn>
         </v-slide-item>
@@ -27,23 +30,28 @@ export default {
       {
         name: 'profile',
         link: '/user/edit/profile',
+        icon: 'mdi-account',
       },
 
       {
         name: 'photo',
         link: '/user/edit/photo',
+        icon: 'mdi-image',
       },
       {
         name: 'view public profile',
         link: '/user/edit/public',
+        icon: 'mdi-account-lock',
       },
       {
         name: 'account',
         link: '/user/edit/account',
+        icon: 'mdi-shield-account',
       },
       {
         name: 'delete',
         link: '/user/edit/delete',
+        icon: 'mdi-alert',
       },
     ],
   }),

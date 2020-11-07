@@ -2,8 +2,7 @@
   <v-app>
     <NavBar />
     <v-main>
-      <v-container>
-        <ProfileEditNav />
+      <v-container class="pa-0" fluid>
         <nuxt />
       </v-container>
     </v-main>
@@ -11,8 +10,5 @@
   </v-app>
 </template>
 
-<script>
-export default {}
-</script>
-
+<script></script>
 <style></style>

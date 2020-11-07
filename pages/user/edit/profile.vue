@@ -44,7 +44,7 @@
         ></v-text-field>
         <v-card-actions
           ><v-btn rounded class="white--text pa-5" color="teal lighten-1"
-            >Submit</v-btn
+            >save changes</v-btn
           ></v-card-actions
         >
       </v-form></v-card-text

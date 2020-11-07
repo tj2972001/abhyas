@@ -11,13 +11,13 @@
         class="rounded-circle mt-2 mr-md-5"
         :height="$vuetify.breakpoint.md ? 250 : 150"
         :width="$vuetify.breakpoint.md ? 250 : 150"
-        src="/tejasfb.jpg"
+        src="/images/tejasfb.jpg"
       />
       <v-file-input label="Upload profile pic" class="mt-2"> </v-file-input>
     </div>
     <v-card-actions
       ><v-btn rounded class="white--text pa-5" color="teal lighten-1"
-        >Update profile pic</v-btn
+        >update photo</v-btn
       ></v-card-actions
     >
   </v-card>

@@ -12,8 +12,8 @@
       </div>
     </v-card-text>
     <v-card-actions
-      ><v-btn rounded class="pa-5" color="red white--text"
-        >Delete your account permanantly</v-btn
+      ><v-btn rounded class="pa-2" color="red white--text"
+        >Delete account permanantly</v-btn
       ></v-card-actions
     >
   </v-card>

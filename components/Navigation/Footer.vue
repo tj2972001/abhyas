@@ -28,13 +28,10 @@
       </v-row>
       <v-row>
         <v-col cols="12" md="6">
-          <v-avatar><v-img src="/v.png"></v-img></v-avatar>
+          <v-avatar><v-img src="/images/v.png"></v-img></v-avatar>
         </v-col>
         <v-col cols="12" md="6">
-          <div class="searchBar">
-            <input type="text" placeholder="Search for anything" />
-            <v-btn icon><v-icon>mdi-text-search</v-icon></v-btn>
-          </div>
+          <SearchBarInNav :search="search" />
         </v-col>
       </v-row>
       <v-row>
@@ -47,7 +44,15 @@
 </template>
 
 <script>
-export default {}
+import SearchBarInNav from '~/components/ui/SearchBarInNav'
+export default {
+  components: { SearchBarInNav },
+  data() {
+    return {
+      search: '',
+    }
+  },
+}
 </script>
 
 <style>
