@@ -7,6 +7,9 @@
       >
         <CourseDescriptionHeadingBlack width="400" />
       </v-row>
+      <v-row v-if="$vuetify.breakpoint.smAndDown">
+        <CourseDescriptionCard width="400" />
+      </v-row>
       <v-row>
         <CourseLearnList />
       </v-row>
@@ -21,7 +24,7 @@
       </v-row>
       <CourseInstructor />
     </v-col>
-    <v-col cols="12" md="4" style="z-index: 100">
+    <v-col v-if="$vuetify.breakpoint.mdAndUp" cols="12" md="4">
       <CourseDescriptionCard width="400" />
     </v-col>
   </v-row>

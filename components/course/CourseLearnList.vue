@@ -1,13 +1,9 @@
 <template>
-  <v-card class="mt-5 ma-0 pa-1 pa-md-3 ml-8 ml-md-15">
-    <v-card-title
-      class="text--primary text-h4 font-weight-bold"
-      style="word-break: keep-all"
-      >What you will learn</v-card-title
-    >
-    <v-row v-if="$vuetify.breakpoint.smAndUp">
+  <v-card class="mt-5 pa-2 pa-md-4 mx-4 mx-md-10 mx-auto" outlined>
+    <HeadingBlackH2>What you will learn?</HeadingBlackH2>
+    <v-row v-if="$vuetify.breakpoint.mdAndUp">
       <v-col cols="12" md="6">
-        <ul>
+        <ul class="noBullets">
           <li>
             <v-icon class="pa-1">mdi-check</v-icon>
             Absolutely master the Event Loop and understand each of its
@@ -28,7 +24,7 @@
         </ul>
       </v-col>
       <v-col cols="12" md="6">
-        <ul>
+        <ul class="noBullets">
           <li>
             <v-icon class="pa-1">mdi-check</v-icon>
             Absolutely master the Event Loop and understand each of its
@@ -51,7 +47,7 @@
     </v-row>
     <v-row v-else>
       <v-col cols="12">
-        <ul>
+        <ul class="noBullets">
           <li>
             <v-icon class="pa-1">mdi-check</v-icon>
             Absolutely master the Event Loop and understand each of its

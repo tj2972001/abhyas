@@ -1,8 +1,6 @@
 <template>
   <v-row class="mt-5 ma-0 pa-1 pa-md-3 ml-8 ml-md-15">
-    <v-col class="text--primary text-h4 font-weight-bold" cols="12"
-      >Instructor</v-col
-    >
+    <v-col cols="12"><HeadingBlackH2>Instructor</HeadingBlackH2></v-col>
 
     <v-col cols="12" class="text-h6">Robert Bunch</v-col>
     <v-col cols="12" class="font-weight-light">

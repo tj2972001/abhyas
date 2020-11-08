@@ -1,9 +1,9 @@
 <template>
   <v-card
-    class="hidden-sm-and-down mx-auto"
+    class="mx-auto"
     :width="Number(width)"
     height="max-content"
-    style="margin-top: 100px"
+    style="margin-top: 30px"
   >
     <video
       src="/videos/delicate.mp4"
@@ -60,6 +60,6 @@
 </template>
 <script>
 export default {
-  props: ['width'],
+  props: ['width', 'marginTop'],
 }
 </script>

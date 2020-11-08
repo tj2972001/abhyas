@@ -63,8 +63,6 @@
             today.
           </v-col>
         </v-row>
-
-        <CourseCardList />
       </v-col>
       <v-col cols="12" md="4">
         <v-row class="text-center">
@@ -124,6 +122,9 @@
           </v-col>
         </v-row>
       </v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="12"><CourseCardList /></v-col>
     </v-row>
   </v-container>
 </template>

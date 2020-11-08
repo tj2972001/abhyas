@@ -1,9 +1,9 @@
 <template>
-  <v-card class="mt-5 ma-0 px-1 px-md-3 ml-8 ml-md-15" flat>
+  <v-card class="mt-5 ma-0 px-1 px-md-3 mx-8 ml-md-15" flat>
     <v-card-title
       class="text--primary text-h4 font-weight-bold"
       style="word-break: keep-all"
-      >Course Content</v-card-title
+      ><HeadingBlackH2>Course Content</HeadingBlackH2></v-card-title
     >
     <v-expansion-panels accordion multiple>
       <v-expansion-panel v-for="(item, i) in 5" :key="i">

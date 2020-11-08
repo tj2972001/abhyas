@@ -4,16 +4,13 @@ h3 {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.ratingsBlock {
-  display: flex;
-  margin-left: 5px;
-}
-.ratingsBlock > * {
-  margin-right: 4px;
-}
 
 .ratingNumber {
   color: rgb(233, 211, 13);
   font-size: 20px;
   font-weight: bold;
+}
+
+.noBullets li {
+  list-style: none;
 }

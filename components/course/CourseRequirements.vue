@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mt-5 ma-0 pa-1 pa-md-3 ml-8 ml-md-15" flat>
+  <v-card class="mt-5 ma-0 pa-1 pa-md-3 ml-8 ml-md-15" outlined width="100%">
     <v-card-title
       class="text--primary text-h4 font-weight-bold"
       style="word-break: keep-all"
