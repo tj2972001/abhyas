@@ -9,7 +9,7 @@
         {{ item }}
       </v-tab>
     </v-tabs>
-    <v-divider></v-divider>
+    <v-divider class="mb-5"></v-divider>
 
     <v-tabs-items v-model="tab">
       <v-tab-item v-for="item in items" :key="item" class="px-5">

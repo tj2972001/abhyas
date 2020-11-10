@@ -25,13 +25,15 @@
     </section>
     <section>
       <HeadingBlackH4>1067 courses found</HeadingBlackH4>
-      <CourseCardMedium />
-      <CourseCardMedium />
-      <CourseCardMedium />
-      <CourseCardMedium />
-      <CourseCardMedium />
-      <CourseCardMedium />
-      <v-pagination v-model="page" :length="6" class="my-5"></v-pagination>
+      <CourseCardHorizontalT2 />
+      <CourseCardHorizontalT2 />
+      <CourseCardHorizontalT2 />
+      <CourseCardHorizontalT2 />
+      <CourseCardHorizontalT2 />
+      <CourseCardHorizontalT2 />
+      <CourseCardHorizontalT2 />
+      <CourseCardHorizontalT2 />
+      <v-pagination v-model="page" :length="4" class="my-5"></v-pagination>
     </section>
   </div>
 </template>

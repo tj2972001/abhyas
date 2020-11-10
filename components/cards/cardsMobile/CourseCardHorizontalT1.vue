@@ -1,5 +1,9 @@
 <template>
-  <v-card class="d-flex my-2 align-center py-1" height="max-content" outlined>
+  <v-card
+    class="d-flex my-2 align-center py-1 pr-1"
+    height="max-content"
+    outlined
+  >
     <img
       src="/images/jonasjscourseimage.jpg"
       style="height: auto; width: 100%; max-width: 64px; max-height: 150px"
