@@ -1,24 +1,25 @@
 <template>
-  <v-card class="d-flex mb-5 align-center py-3" height="max-content">
+  <v-card class="d-flex my-2 align-center py-1" height="max-content" outlined>
     <img
       src="/images/jonasjscourseimage.jpg"
-      style="height: 64px; width: 64px"
+      style="height: auto; width: 100%; max-width: 64px; max-height: 150px"
     />
     <div class="ml-4">
-      <h4 class="text-h6 font-weight-medium mb-2">
+      <h4 class="text-body-2 font-weight-medium">
         Complete Javascript Guide 2020: Build real projects
       </h4>
-      <p class="text--secondary font-weight-medium text-caption mb-0">
+      <p class="text--secondary font-weight-light text-caption my-1">
         Tejas Jadhav
       </p>
-      <div class="mb-1 d-flex align-center">
-        <span style="color: #d49b1e"> 4.8 ratings </span>
+      <div class="d-flex align-center" style="margin-top: -10px">
+        <span style="color: #d49b1e; font-size: 10px"> 4.8 ratings </span>
         <v-rating
           v-model="rating"
-          class="pa-2"
+          class="pa-1"
           style="display: inline-block"
           readonly
           dense
+          size="16"
           color="#d49b1e"
           half-increments
         ></v-rating>
