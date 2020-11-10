@@ -9,6 +9,3 @@
     <Footer />
   </v-app>
 </template>
-
-<script></script>
-<style></style>

@@ -124,6 +124,7 @@
       </v-col>
     </v-row>
     <v-row>
+      <HeadingBlackH4>My Courses (25)</HeadingBlackH4>
       <v-col cols="12"><CourseCardList /></v-col>
     </v-row>
   </v-container>

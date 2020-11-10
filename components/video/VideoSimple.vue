@@ -1,0 +1,9 @@
+<template>
+  <video
+    src="/videos/delicate.mp4"
+    controls
+    poster="/images/jonasjscourseimage.jpg"
+    width="300px"
+    height="auto"
+  ></video>
+</template>
