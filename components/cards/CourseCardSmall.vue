@@ -12,7 +12,7 @@
         Tejas Jadhav
       </p>
       <div class="d-flex align-center" style="margin-top: -10px">
-        <span style="color: #d49b1e; font-size: 10px"> 4.8 ratings </span>
+        <span style="color: #d49b1e; font-size: 12px"> 4.8 ratings </span>
         <v-rating
           v-model="rating"
           class="pa-1"
@@ -23,10 +23,12 @@
           color="#d49b1e"
           half-increments
         ></v-rating>
+        <span style="color: #d49b1e; font-size: 12px">( 1000 )</span>
       </div>
-      <div>
-        <span class="font-weight-bold text-body-1 orange--text"> $700 </span>
-        <span class="text-decoration-line-through font-weight-thin ml-4"
+      <div style="margin-top: -5px">
+        <span class="font-weight-bold text-body-2 orange--text"> $700 </span>
+        <span
+          class="text-decoration-line-through text-body-2 font-weight-thin ml-4"
           >$1200</span
         >
       </div>
