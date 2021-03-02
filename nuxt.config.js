@@ -15,6 +15,7 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: ['@/assets/css/general.css'],
+  plugins: ['~plugins/vue-awesome.js'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -63,5 +64,7 @@ export default {
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: {
+    transpile: [/^vue-awesome/],
+  },
 }

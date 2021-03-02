@@ -2,6 +2,9 @@
 
 ## Build Setup
 
+
+### - frontendDev branch is having frontend
+
 ```bash
 # install dependencies
 $ npm install

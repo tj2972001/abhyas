@@ -11,7 +11,7 @@
           color="amber"
           class="mx-auto mt-1 d-block"
           style="width: 80%"
-          ><v-icon class="ma-2">mdi-google</v-icon
+          ><fa-icon name="brands/google" class="mx-2" scale="1.2"></fa-icon
           ><span> Login with google</span>
         </v-btn>
         <v-btn
@@ -19,7 +19,7 @@
           color="blue"
           class="mx-auto mt-1 d-block"
           style="width: 80%"
-          ><v-icon class="ma-2">mdi-microsoft</v-icon
+          ><fa-icon name="brands/microsoft" class="mx-2" scale="1.2"></fa-icon
           ><span> Login with Microsoft</span>
         </v-btn>
         <v-btn
@@ -27,7 +27,7 @@
           color="grey"
           class="mx-auto mt-1 d-block"
           style="width: 80%"
-          ><v-icon class="ma-2">mdi-github</v-icon
+          ><fa-icon name="brands/github" class="mx-2" scale="1.2"></fa-icon
           ><span> Login with github</span>
         </v-btn>
       </div>

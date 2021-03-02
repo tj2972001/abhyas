@@ -44,9 +44,7 @@
 </template>
 
 <script>
-import SearchBarInNav from '~/components/ui/SearchBarInNav'
 export default {
-  components: { SearchBarInNav },
   data() {
     return {
       search: '',

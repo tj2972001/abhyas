@@ -1,23 +1,24 @@
 <template>
-  <div>
+  <div class="mx-10">
     <!--TODO pass as prop-->
-    <HeadingWelcomeBack>Welcome Back , TEJAS</HeadingWelcomeBack>
-    <div class="purple--text font-weight-bold text-h6">
-      <div>Start learning where you left off</div>
-    </div>
+    <HeadingTealH2 class="mt-10">Welcome Back , TEJAS</HeadingTealH2>
+    <HeadingBlackH4>Start learning where you left off</HeadingBlackH4>
+
     <div class="mt-5">
       <VideoSimple />
     </div>
     <section>
-      <HeadingTealH2>Explore more courses in Vue.js</HeadingTealH2>
+      <HeadingTealH2 class="my-3">Explore more courses in Vue.js</HeadingTealH2>
       <CourseCarousel />
     </section>
     <section>
-      <HeadingTealH2>Students who bought React.js also bought</HeadingTealH2>
+      <HeadingTealH2 class="my-3"
+        >Students who bought React.js also bought</HeadingTealH2
+      >
       <CourseCarousel />
     </section>
     <section>
-      <HeadingTealH2>What to learn next ?</HeadingTealH2>
+      <HeadingTealH2 class="my-3">What to learn next ?</HeadingTealH2>
       <HeadingBlackH4>Recommended for you</HeadingBlackH4>
       <CourseCarousel />
     </section>
@@ -29,7 +30,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+  layout: 'courseDescription',
+}
 </script>
 
 <style lang="scss" scoped></style>

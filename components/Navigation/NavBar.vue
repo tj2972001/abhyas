@@ -22,14 +22,10 @@
       <v-toolbar-title><h3>Abhyas</h3></v-toolbar-title>
       <v-spacer></v-spacer>
       <SearchBarInNav />
-      <v-btn text rounded color="indigo darken-2">My courses</v-btn>
-      <v-btn text rounded color="indigo darken-2">Teach </v-btn>
-      <v-btn icon class="mx-1" title="wishlist"
-        ><v-icon>mdi-heart-outline</v-icon></v-btn
-      >
-      <v-btn icon class="mx-1" title="wishlist"
-        ><v-icon>mdi-cart-outline</v-icon></v-btn
-      >
+      <v-btn text rounded>My courses</v-btn>
+      <v-btn text rounded>Teach </v-btn>
+      <v-btn icon class="mx-1"><v-icon>mdi-heart-outline</v-icon></v-btn>
+      <v-btn icon class="mx-1"><v-icon>mdi-cart-outline</v-icon></v-btn>
       <v-avatar rounded="false"
         ><v-img src="/images/tejasfb.jpg"></v-img
       ></v-avatar>
@@ -45,17 +41,7 @@ export default {
   data() {
     return {
       drawer: false,
-
-      title: 'Abhyas',
     }
-  },
-  computed: {
-    items() {
-      return Array.from({ length: this.length }, (k, v) => v + 1)
-    },
-    length() {
-      return 7000
-    },
   },
 }
 </script>

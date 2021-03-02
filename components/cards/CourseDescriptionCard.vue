@@ -27,7 +27,13 @@
       <v-btn width="80%" class="white--text" color="pink lighten-1">
         Buy Now</v-btn
       >
-      <v-btn width="80%" class="mt-3" color="pink lighten-1" outlined>
+      <v-btn
+        width="80%"
+        class="mt-3"
+        style="transform: translateX(-1%)"
+        color="pink lighten-1"
+        outlined
+      >
         Add to cart</v-btn
       >
     </v-card-actions>
