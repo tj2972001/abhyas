@@ -15,6 +15,14 @@ export default {
   },
   data() {
     return {
+      options: {
+        responsive: [
+          { end: 576, size: 2 },
+          { start: 576, end: 768, size: 3 },
+          { start: 768, end: 992, size: 4 },
+          { size: 5 },
+        ],
+      },
       items: [
         { title: 'Item 0', content: 'Content item with description' },
         { title: 'Item 0', content: 'Content item with description' },

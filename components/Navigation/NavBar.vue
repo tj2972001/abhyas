@@ -17,9 +17,11 @@
       class="hidden-sm-and-down"
     >
       <v-app-bar-nav-icon>
-        <v-avatar rounded="false"><v-img src="/images/v.png"></v-img></v-avatar>
+        <v-avatar><v-img src="images/abhyas_logo.jpeg"></v-img></v-avatar>
       </v-app-bar-nav-icon>
-      <v-toolbar-title><h3>Abhyas</h3></v-toolbar-title>
+      <v-toolbar-title
+        ><h2 class="blueishLinearGrad">Abhyas</h2></v-toolbar-title
+      >
       <v-spacer></v-spacer>
       <SearchBarInNav />
       <v-btn text rounded>My courses</v-btn>
@@ -44,6 +46,7 @@ export default {
     }
   },
 }
+// अभ्यास
 </script>
 
 <style></style>

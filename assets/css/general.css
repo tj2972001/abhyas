@@ -1,4 +1,4 @@
-h3 {
+.blueishLinearGrad {
   text-transform: uppercase;
   background: linear-gradient(to right, #35a1e9 0%, #1f31d3 100%);
   background-clip: text;
