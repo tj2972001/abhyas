@@ -8,13 +8,17 @@
         <v-slide-item v-for="option in profileEditOptions" :key="option.name">
           <v-btn
             :small="$vuetify.breakpoint.smAndDown"
-            class="mx-2"
             active-class="purple white--text"
             depressed
             rounded
             :to="`${option.link}`"
           >
-            <v-icon class="px-1">{{ option.icon }}</v-icon>
+            <fa-icon
+              class="px-2"
+              :name="option.icon"
+              scale="2"
+              color="#000"
+            ></fa-icon>
             {{ option.name }}
           </v-btn>
         </v-slide-item>
@@ -30,28 +34,28 @@ export default {
       {
         name: 'profile',
         link: '/user/edit/profile',
-        icon: 'mdi-account',
+        icon: 'regular/user',
       },
 
       {
         name: 'photo',
         link: '/user/edit/photo',
-        icon: 'mdi-image',
+        icon: 'regular/image',
       },
       {
         name: 'view public profile',
         link: '/user/edit/public',
-        icon: 'mdi-account-lock',
+        icon: 'regular/address-card',
       },
       {
         name: 'account',
         link: '/user/edit/account',
-        icon: 'mdi-shield-account',
+        icon: 'shield-alt',
       },
       {
         name: 'delete',
         link: '/user/edit/delete',
-        icon: 'mdi-alert',
+        icon: 'skull-crossbones',
       },
     ],
   }),

@@ -1,7 +1,9 @@
 <template>
   <div>
     <section>
-      <HeadingTealH2>Search among 112,342 courses on Abhyas</HeadingTealH2>
+      <HeadingTealH2 class="mt-5"
+        >Search among 112,342 courses on Abhyas</HeadingTealH2
+      >
       <div class="mt-5 d-flex justify-start">
         <v-autocomplete
           v-model="value"
@@ -24,15 +26,15 @@
       </div>
     </section>
     <section>
-      <HeadingBlackH4>1067 courses found</HeadingBlackH4>
-      <CourseCardHorizontalT2 />
-      <CourseCardHorizontalT2 />
-      <CourseCardHorizontalT2 />
-      <CourseCardHorizontalT2 />
-      <CourseCardHorizontalT2 />
-      <CourseCardHorizontalT2 />
-      <CourseCardHorizontalT2 />
-      <CourseCardHorizontalT2 />
+      <HeadingBlackH4 class="my-3">1067 courses found</HeadingBlackH4>
+      <CourseCardMedium />
+      <CourseCardMedium />
+      <CourseCardMedium />
+      <CourseCardMedium />
+      <CourseCardMedium />
+      <CourseCardMedium />
+      <CourseCardMedium />
+      <CourseCardMedium />
       <v-pagination v-model="page" :length="4" class="my-5"></v-pagination>
     </section>
   </div>

@@ -26,8 +26,10 @@
       <SearchBarInNav />
       <v-btn text rounded>My courses</v-btn>
       <v-btn text rounded>Teach </v-btn>
-      <v-btn icon class="mx-1"><v-icon>mdi-heart-outline</v-icon></v-btn>
-      <v-btn icon class="mx-1"><v-icon>mdi-cart-outline</v-icon></v-btn>
+      <Menu name="xsx" icon="" />
+      <v-btn icon class="mx-1"
+        ><fa-icon scale="1.6" class="mr-2" name="regular/heart"></fa-icon
+      ></v-btn>
       <v-avatar rounded="false"
         ><v-img src="/images/tejasfb.jpg"></v-img
       ></v-avatar>

@@ -84,18 +84,13 @@
 "
             >
               Linkedin |
-              <v-icon class="pa-2">mdi-linkedin</v-icon>
+              <v-icon class="pa-2" color="blue darken-2">mdi-linkedin</v-icon>
             </v-btn>
           </v-col>
           <v-col cols="12">
-            <v-btn
-              width="60%"
-              outlined
-              color="teal lighten-2
-"
-            >
+            <v-btn width="60%" outlined color="teal lighten-1">
               Facebook |
-              <v-icon class="pa-2">mdi-facebook</v-icon>
+              <v-icon class="pa-2" color="blue darken-1">mdi-facebook</v-icon>
             </v-btn>
           </v-col>
           <v-col cols="12">
@@ -106,7 +101,7 @@
 "
             >
               Instagram |
-              <v-icon class="pa-2">mdi-instagram</v-icon>
+              <v-icon class="pa-2" color="pink darken-1">mdi-instagram</v-icon>
             </v-btn>
           </v-col>
           <v-col cols="12">
@@ -117,7 +112,7 @@
 "
             >
               Personal site |
-              <v-icon class="pa-2">mdi-web</v-icon>
+              <v-icon class="pa-2" color="black">mdi-web</v-icon>
             </v-btn>
           </v-col>
         </v-row>

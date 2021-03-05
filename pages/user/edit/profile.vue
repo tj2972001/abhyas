@@ -17,26 +17,71 @@
           :dense="$vuetify.breakpoint.xsOnly"
           label="Email"
           outlined
-        ></v-text-field
-        ><v-text-field
-          :dense="$vuetify.breakpoint.xsOnly"
-          append-icon="mdi-facebook"
-          label="Facebook username"
-          outlined
-        ></v-text-field
-        ><v-text-field
-          :dense="$vuetify.breakpoint.xsOnly"
-          append-icon="mdi-twitter"
-          label="Twitter username"
-          outlined
-        ></v-text-field
-        ><v-text-field
-          :dense="$vuetify.breakpoint.xsOnly"
-          append-icon="mdi-linkedin"
-          label="Linkedin username"
-          outlined
-        ></v-text-field
-        ><v-text-field
+        ></v-text-field>
+        <div
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          <div
+            style="
+              transform: translateY(-40%);
+              background-color: #eee;
+              line-height: 200%;
+              margin-right: 3%;
+              padding: 5px;
+            "
+          >
+            https://www.facebook.com/
+          </div>
+          <v-text-field
+            :dense="$vuetify.breakpoint.xsOnly"
+            append-icon="mdi-facebook"
+            label="Facebook username"
+            outlined
+          ></v-text-field>
+        </div>
+        <div
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          <div
+            style="
+              transform: translateY(-40%);
+              background-color: #eee;
+              line-height: 200%;
+              margin-right: 3%;
+              padding: 5px;
+            "
+          >
+            https://www.twitter.com/
+          </div>
+          <v-text-field
+            :dense="$vuetify.breakpoint.xsOnly"
+            append-icon="mdi-twitter"
+            label="twitter username"
+            outlined
+          ></v-text-field>
+        </div>
+        <div
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          <div
+            style="
+              transform: translateY(-40%);
+              background-color: #eee;
+              line-height: 200%;
+              margin-right: 3%;
+              padding: 5px;
+            "
+          >
+            https://www.linkidin.com/
+          </div>
+          <v-text-field
+            :dense="$vuetify.breakpoint.xsOnly"
+            append-icon="mdi-linkidin"
+            label="Linkidin username"
+            outlined
+          ></v-text-field>
+        </div>
+        <v-text-field
           :dense="$vuetify.breakpoint.xsOnly"
           append-icon="mdi-web"
           label="Personal site"
