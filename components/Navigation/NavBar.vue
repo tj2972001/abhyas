@@ -24,12 +24,12 @@
       >
       <v-spacer></v-spacer>
       <SearchBarInNav />
-      <v-btn text rounded>My courses</v-btn>
-      <v-btn text rounded>Teach </v-btn>
-      <Menu name="xsx" icon="" />
-      <v-btn icon class="mx-1"
-        ><fa-icon scale="1.6" class="mr-2" name="regular/heart"></fa-icon
-      ></v-btn>
+      <navigation-link>My courses</navigation-link>
+      <navigation-link>Teach</navigation-link>
+      <Menu name="xsx" icon="dxed" />
+      <span class="ma-5"
+        ><fa-icon scale="1.6" name="regular/heart"></fa-icon
+      ></span>
       <v-avatar rounded="false"
         ><v-img src="/images/tejasfb.jpg"></v-img
       ></v-avatar>
@@ -41,7 +41,9 @@
 </template>
 
 <script>
+import NavigationLink from '../other/NavigationLink.vue'
 export default {
+  components: { NavigationLink },
   data() {
     return {
       drawer: false,

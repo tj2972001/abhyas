@@ -14,3 +14,12 @@
 .noBullets li {
   list-style: none;
 }
+.linkNavigationHeader {
+  font-size: 1.2rem;
+}
+.linkNavigationHeader:hover {
+  color: rgb(175, 68, 152);
+}
+.v-application a {
+  color: #000;
+}

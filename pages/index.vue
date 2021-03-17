@@ -22,10 +22,6 @@
       <HeadingBlackH4>Recommended for you</HeadingBlackH4>
       <CourseCarousel />
     </section>
-    <section>
-      <HeadingTealH2>Explore courses in Abhyas course explorer</HeadingTealH2>
-      <v-btn outlined color="pink" class="mt-5">Explore </v-btn>
-    </section>
   </div>
 </template>
 

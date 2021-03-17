@@ -8,9 +8,9 @@
     offset-x
   >
     <template v-slot:activator="{ on, attrs }">
-      <v-btn text rounded class="mx-1" v-bind="attrs" v-on="on"
+      <span class="linkNavigationHeader ma-2" v-bind="attrs" v-on="on"
         ><v-icon v-if="icon">mdi-{{ icon }}</v-icon
-        >{{ name }}</v-btn
+        >{{ name }}</span
       >
     </template>
 
