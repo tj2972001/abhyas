@@ -36,6 +36,11 @@
 </template>
 <script>
 export default {
+  head() {
+    return {
+      title: 'Category - Business',
+    }
+  },
   layout: 'courseDescription',
 }
 </script>

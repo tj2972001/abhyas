@@ -43,6 +43,11 @@ export default {
       return this.$vuetify.breakpoint.smAndUp
     },
   },
+  head() {
+    return {
+      title: 'Advanced Node Bootcamp',
+    }
+  },
 }
 </script>
 <style scoped>

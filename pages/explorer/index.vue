@@ -45,5 +45,10 @@ export default {
     items: ['foo', 'bar', 'fizz', 'buzz'],
     value: null,
   }),
+  head() {
+    return {
+      title: 'Abhyass Explorer',
+    }
+  },
 }
 </script>

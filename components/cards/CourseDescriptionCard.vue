@@ -3,7 +3,7 @@
     class="mx-auto"
     :width="Number(width)"
     height="max-content"
-    style="margin-top: 30px"
+    style="top: 150px; position: sticky"
   >
     <video
       src="/videos/delicate.mp4"

@@ -18,7 +18,6 @@
       <div class="d-flex align-center" style="margin-top: -10px">
         <span style="color: #d49b1e; font-size: 12px"> 4.8 ratings </span>
         <v-rating
-          v-model="rating"
           class="pa-1"
           style="display: inline-block"
           readonly

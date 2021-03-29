@@ -59,7 +59,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      title: 'Login | Abhyass',
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped></style>
