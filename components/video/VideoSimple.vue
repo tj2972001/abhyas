@@ -4,6 +4,6 @@
     controls
     poster="/images/jonasjscourseimage.jpg"
     width="300px"
-    height="auto"
+    height="200px"
   ></video>
 </template>

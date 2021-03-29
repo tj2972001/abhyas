@@ -1,25 +1,23 @@
 <template>
-  <div>
-    <v-card flat width="600" class="mx-auto mt-10">
-      <v-card-title class="text-h6 justify-center"
-        >Login to your Abhyas account</v-card-title
-      >
-      <v-divider></v-divider>
-      <div class="my-3">
-        <v-btn
-          outlined
-          color="amber"
-          class="mx-auto mt-1 d-block"
-          style="width: 80%"
-          ><fa-icon name="brands/google" class="mx-2" scale="1.2"></fa-icon
+  <div class="app-row login">
+    <div class="login__header">Login to your account</div>
+    <v-divider></v-divider>
+    <div class="my-3">
+      <div class="login__social-auth">
+        <v-btn outlined color="amber"
+          ><fa-icon
+            class="login__icon"
+            name="brands/google"
+            scale="1.2"
+          ></fa-icon
           ><span> Login with google</span>
         </v-btn>
-        <v-btn
-          outlined
-          color="blue"
-          class="mx-auto mt-1 d-block"
-          style="width: 80%"
-          ><fa-icon name="brands/microsoft" class="mx-2" scale="1.2"></fa-icon
+        <v-btn outlined color="blue"
+          ><fa-icon
+            class="login__icon"
+            name="brands/microsoft"
+            scale="1.2"
+          ></fa-icon
           ><span> Login with Microsoft</span>
         </v-btn>
         <v-btn
@@ -31,30 +29,32 @@
           ><span> Login with github</span>
         </v-btn>
       </div>
-      <v-divider></v-divider>
-      <div class="mt-5">
-        <v-text-field
-          label="Email"
-          type="email"
-          outlined
-          dense
-          append-icon="mdi-email"
-        ></v-text-field>
-        <v-text-field
-          label="Password"
-          type="password"
-          append-icon="mdi-key"
-          outlined
-          dense
-          style="margin-top: -20px"
-        ></v-text-field>
-        <v-card-actions class="justify-center"
-          ><v-btn color="red accent-2 white--text pa-5" rounded
-            >Login</v-btn
-          ></v-card-actions
-        >
-      </div>
-    </v-card>
+    </div>
+    <v-divider></v-divider>
+    <div class="login__form">
+      <v-text-field
+        label="Email"
+        type="email"
+        class="login__form--email"
+        outlined
+        dense
+        append-icon="mdi-email"
+      ></v-text-field>
+      <v-text-field
+        label="Password"
+        type="password"
+        class="login__form--password"
+        append-icon="mdi-key"
+        outlined
+        dense
+        style="margin-top: -20px"
+      ></v-text-field>
+      <v-card-actions class="justify-center"
+        ><v-btn color="red accent-2 white--text pa-5" rounded
+          >Login</v-btn
+        ></v-card-actions
+      >
+    </div>
   </div>
 </template>
 
@@ -68,4 +68,33 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@import '/assets/scss/abstracts/variables';
+
+.login {
+  &__header {
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-family: 'Roboto Slab', Serif;
+    color: $color-teal-dark;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__social-auth {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    & > * {
+      margin: 0.4rem auto;
+      width: 90%;
+      max-width: 40em;
+      display: block;
+    }
+  }
+  &__form {
+    margin-top: 1.5rem;
+  }
+  &__icon {
+    margin: 0.4rem;
+  }
+}
+</style>

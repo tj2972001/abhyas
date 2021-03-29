@@ -16,9 +16,7 @@
       app
       class="hidden-sm-and-down"
     >
-      <v-app-bar-nav-icon>
-        <v-avatar><v-img src="images/abhyas_logo.jpeg"></v-img></v-avatar>
-      </v-app-bar-nav-icon>
+      <img class="logo-nav" src="/images/v.png" />
       <v-toolbar-title
         ><h2 class="blueishLinearGrad">Abhyas</h2></v-toolbar-title
       >
@@ -53,4 +51,9 @@ export default {
 // अभ्यास
 </script>
 
-<style></style>
+<style scoped>
+.logo-nav {
+  height: 3rem;
+  width: 3rem;
+}
+</style>

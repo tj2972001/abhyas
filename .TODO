@@ -1,0 +1,7 @@
+1) Logo
+2) Signup/Login Typography and colors
+3) course/advanced-node
+4) Style remaining 2 course cards with own styling (remove vuetify)
+5) Style teach
+
+After this, there will be far less dependacy on Vuetify styles

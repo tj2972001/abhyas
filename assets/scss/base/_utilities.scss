@@ -1,0 +1,24 @@
+
+/* Applly this class when its childrens are list-items and we don't want bullets*/
+.noBullets {
+  li{
+    list-style: none;
+  }
+}
+
+/* By default Vuetify links are styled, to apply black color to them , use this class */
+.v-application .linkNavigationHeader {
+  color: #000;
+}
+.linkNavigationHeader {
+  font-size: 1.2rem;
+}
+
+.linkNavigationHeader {
+  &:hover{
+    color: $color-pinkviolet-medium;
+  }
+}
+/******************************************************************/
+
+

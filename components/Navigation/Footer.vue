@@ -61,8 +61,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 a {
+  color: #000;
   margin: 0.3em;
 }
 .v-list > * {

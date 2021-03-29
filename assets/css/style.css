@@ -1,25 +1,103 @@
+/******SEQUENCE MATTERS*****/
+/*ss*/
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktopp
+
+ORDER: Basae + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+/*COLORS*/
+/*FONT*/
+/*GRID*/
+/**/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+:root {
+  font-size: 100%; }
+
+body {
+  box-sizing: border-box; }
+
+::selection {
+  background-color: #009688;
+  color: #fff; }
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Train One', cursive;
+ */
 .blueishLinearGrad {
   text-transform: uppercase;
-  background: linear-gradient(to right, #35a1e9 0%, #1f31d3 100%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+  color: #EF5350; }
 
-.ratingNumber {
-  color: rgb(233, 211, 13);
-  font-size: 20px;
-  font-weight: bold;
-}
-
+/* Applly this class when its childrens are list-items and we don't want bullets*/
 .noBullets li {
-  list-style: none;
-}
+  list-style: none; }
+
+/* By default Vuetify links are styled, to apply black color to them , use this class */
+.v-application .linkNavigationHeader {
+  color: #000; }
+
 .linkNavigationHeader {
-  font-size: 1.2rem;
-}
+  font-size: 1.2rem; }
+
 .linkNavigationHeader:hover {
-  color: rgb(175, 68, 152);
-}
-.v-application a {
-  color: #000;
-}
+  color: #E040FB; }
+
+/******************************************************************/
+.app-row {
+  max-width: 71.25rem;
+  margin: 0 auto; }
+  .app-row:not(:last-child) {
+    margin-bottom: 5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .app-row:not(:last-child) {
+        margin-bottom: 3.75rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .app-row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
+  .app-row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .app-row [class^="app-col-"] {
+    float: left; }
+    .app-row [class^="app-col-"]:not(:last-child) {
+      margin-right: 3.75rem; }
+      @media only screen and (max-width: 56.25em) {
+        .app-row [class^="app-col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 3.75rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .app-row [class^="app-col-"] {
+        width: 100% !important; } }
+  .app-row .app-col-1-of-2 {
+    width: calc((100% - 3.75rem) / 2); }
+  .app-row .app-col-1-of-3 {
+    width: calc((100% - 2 * 3.75rem) / 3); }
+  .app-row .app-col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 3.75rem) / 3) + 3.75rem); }
+  .app-row .app-col-1-of-4 {
+    width: calc((100% - 3 * 3.75rem) / 4); }
+  .app-row .app-col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 3.75rem) / 4) + 3.75rem); }
+  .app-row .app-col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 3.75rem) / 4) + 2 * 3.75rem); }

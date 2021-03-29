@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mt-5 pa-2 pa-md-4 mx-4 mx-md-10 mx-auto" outlined>
+  <v-card class="mt-5 ma-0 pa-1 pa-md-3 ml-8 ml-md-15" outlined>
     <HeadingBlackH2>What you will learn?</HeadingBlackH2>
     <v-row v-if="$vuetify.breakpoint.mdAndUp">
       <v-col cols="12" md="6">

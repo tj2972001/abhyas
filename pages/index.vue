@@ -1,25 +1,33 @@
 <template>
-  <div class="mx-10">
+  <div class="home">
     <!--TODO pass as prop-->
-    <HeadingTealH2 class="mt-10">Welcome Back , TEJAS</HeadingTealH2>
-    <HeadingBlackH4>Start learning where you left off</HeadingBlackH4>
+    <HeadingTealH2 class="home__welcome">Welcome Back , TEJAS</HeadingTealH2>
+    <HeadingBlackH4 class="home__start-again"
+      >Start learning where you left off</HeadingBlackH4
+    >
 
-    <div class="mt-5">
+    <div class="home__video">
       <VideoSimple />
     </div>
-    <section>
-      <HeadingTealH2 class="my-3">Explore more courses in Vue.js</HeadingTealH2>
+    <section class="home__explore-more">
+      <HeadingTealH2 class="home__explore-more--heading"
+        >Explore more courses in Vue.js</HeadingTealH2
+      >
       <CourseCarousel />
     </section>
-    <section>
-      <HeadingTealH2 class="my-3"
+    <section class="home__also-bought">
+      <HeadingTealH2 class="home__also-bought--heading"
         >Students who bought React.js also bought</HeadingTealH2
       >
       <CourseCarousel />
     </section>
-    <section>
-      <HeadingTealH2 class="my-3">What to learn next ?</HeadingTealH2>
-      <HeadingBlackH4>Recommended for you</HeadingBlackH4>
+    <section class="home__what-to-learn-next">
+      <HeadingTealH2 class="home__what-to-learn-next--heading"
+        >What to learn next ?</HeadingTealH2
+      >
+      <HeadingBlackH4 class="home__what-to-learn-next--recommended"
+        >Recommended for you</HeadingBlackH4
+      >
       <CourseCarousel />
     </section>
   </div>
@@ -31,4 +39,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.home {
+  margin: 2rem 2.6rem;
+}
+</style>
