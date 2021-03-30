@@ -1,39 +1,41 @@
 <template>
-  <v-row class="mt-5 ma-0 pa-1 pa-md-3 ml-8 ml-md-15">
-    <v-col cols="12"><HeadingBlackH2>Instructor</HeadingBlackH2></v-col>
-
-    <v-col cols="12" class="text-h6">Robert Bunch</v-col>
-    <v-col cols="12" class="font-weight-light">
+  <v-card outlined class="course-instructor">
+    <HeadingBlackH2 class="course-instructor__heading"
+      >Instructor</HeadingBlackH2
+    >
+    <HeadingBlackH4 class="course-instructor__name"
+      >Robert Bunch</HeadingBlackH4
+    >
+    <HeadingBlackH6 class="course-instructor__designation">
       Code school instructor, software architect and engineer
-    </v-col>
-    <v-col class="d-flex justify-start" cols="12">
+    </HeadingBlackH6>
+
+    <div class="course-instructor__stats">
       <img
         src="/images/tejasfb.jpg"
-        alt=""
-        class="rounded-circle mr-10"
-        :height="$vuetify.breakpoint.xs ? 120 : 200"
-        :width="$vuetify.breakpoint.xs ? 120 : 200"
+        alt="instructor-image"
+        class="course-instructor__photo"
       />
-      <div class="d-flex flex-column align-start">
-        <div class="d-flex mt-3 justify-space-between">
+      <div class="course-instructor__stats__container">
+        <div class="course-instructor__stats--ratings">
           <v-icon color="#d49b1e">mdi-star-outline</v-icon>
           <div class="ml-2">2.4 Instructor ratings</div>
         </div>
-        <div class="d-flex mt-3 justify-space-between">
+        <div class="course-instructor__stats--students">
           <v-icon color="#d49b1e">mdi-account-group-outline</v-icon>
           <div class="ml-2">233443 students</div>
         </div>
-        <div class="d-flex mt-3 justify-space-between">
+        <div class="course-instructor__stats--reviews">
           <v-icon color="#d49b1e">mdi-star-circle-outline</v-icon>
           <div class="ml-2">2223 reviews</div>
         </div>
-        <div class="d-flex mt-3 justify-space-between">
+        <div class="course-instructor__stats--courses">
           <v-icon color="#d49b1e">mdi-video-vintage</v-icon>
           <div class="ml-2">10 courses</div>
         </div>
       </div>
-    </v-col>
-    <v-col class="text-body-1">
+    </div>
+    <div class="paragraph">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero corrupti,
       nihil expedita doloribus blanditiis optio sequi, molestiae ad repellendus
       corporis aliquid? Asperiores consectetur repudiandae excepturi a expedita
@@ -44,6 +46,47 @@
       adipisicing elit. A ab officia doloremque quam dolorum vitae dicta dolor
       provident inventore ad iusto fugit harum at amet quis, porro, nobis
       ratione sed.
-    </v-col>
-  </v-row>
+    </div>
+  </v-card>
 </template>
+<style lang="scss" scoped>
+.course-instructor {
+  &__heading {
+    padding-left: 1.3rem;
+    padding-top: 1.3rem;
+  }
+  &__name {
+    padding-left: 1.3rem;
+  }
+  &__designation {
+    padding-left: 1.3rem;
+  }
+  &__photo {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    padding: 0.6rem;
+  }
+  &__stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    &__container {
+      margin-left: 3rem;
+      & > div {
+        display: flex;
+        margin-top: 0.4rem;
+      }
+    }
+    &--ratings {
+    }
+    &--students {
+    }
+    &--reviews {
+    }
+    &--courses {
+    }
+  }
+}
+</style>

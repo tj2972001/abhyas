@@ -32,7 +32,7 @@
       <span class="course-card-large__price--amount"> $700 </span>
       <span class="course-card-large__price--discountedAmount">$1200</span>
     </div>
-    <div class="course-card-large__details">
+    <div class="course-card-large__details no-word-break">
       <span>13 hours - 23 sections - All levels </span>
     </div>
   </v-card>
@@ -93,7 +93,6 @@
     font-weight: 500;
     font-size: 0.875rem;
     margin-bottom: 0.625rem;
-    word-break: keep-all;
   }
 }
 </style>

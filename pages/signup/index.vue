@@ -63,6 +63,7 @@
 
 <script>
 export default {
+  layout: 'courseDescription',
   head() {
     return {
       title: 'Signup | Abhyass',
@@ -77,8 +78,8 @@ export default {
   &__header {
     margin-top: 3rem;
     font-size: 2rem;
-    font-family: 'Roboto Slab', Serif;
-    color: $color-teal-dark;
+    font-family: 'Roboto', sans-serif;
+    color: $color-black-pure;
     font-weight: 700;
     text-align: center;
   }

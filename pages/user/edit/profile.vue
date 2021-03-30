@@ -1,99 +1,57 @@
 <template>
-  <v-card width="800" max-width="90%" class="mx-auto mt-10" outlined>
-    <v-card-title class="justify-center">Public profile</v-card-title>
-    <v-card-text>
-      <v-form
-        ><v-text-field
-          :dense="$vuetify.breakpoint.xsOnly"
-          label="Name"
-          outlined
-        ></v-text-field
-        ><v-text-field
-          :dense="$vuetify.breakpoint.xsOnly"
-          label="Last Name"
-          outlined
-        ></v-text-field
-        ><v-text-field
-          :dense="$vuetify.breakpoint.xsOnly"
-          label="Email"
-          outlined
-        ></v-text-field>
-        <div
-          style="display: flex; align-items: center; justify-content: center"
-        >
-          <div
-            style="
-              transform: translateY(-40%);
-              background-color: #eee;
-              line-height: 200%;
-              margin-right: 3%;
-              padding: 5px;
-            "
-          >
-            https://www.facebook.com/
-          </div>
-          <v-text-field
-            :dense="$vuetify.breakpoint.xsOnly"
-            append-icon="mdi-facebook"
-            label="Facebook username"
-            outlined
-          ></v-text-field>
-        </div>
-        <div
-          style="display: flex; align-items: center; justify-content: center"
-        >
-          <div
-            style="
-              transform: translateY(-40%);
-              background-color: #eee;
-              line-height: 200%;
-              margin-right: 3%;
-              padding: 5px;
-            "
-          >
-            https://www.twitter.com/
-          </div>
-          <v-text-field
-            :dense="$vuetify.breakpoint.xsOnly"
-            append-icon="mdi-twitter"
-            label="twitter username"
-            outlined
-          ></v-text-field>
-        </div>
-        <div
-          style="display: flex; align-items: center; justify-content: center"
-        >
-          <div
-            style="
-              transform: translateY(-40%);
-              background-color: #eee;
-              line-height: 200%;
-              margin-right: 3%;
-              padding: 5px;
-            "
-          >
-            https://www.linkidin.com/
-          </div>
-          <v-text-field
-            :dense="$vuetify.breakpoint.xsOnly"
-            append-icon="mdi-linkidin"
-            label="Linkidin username"
-            outlined
-          ></v-text-field>
+  <v-card class="edit-profile" outlined>
+    <HeadingBlackH2 class="edit-profile__heading"
+      >Public profile</HeadingBlackH2
+    >
+    <v-form class="edit-profile__form"
+      ><v-text-field label="Name" outlined dense></v-text-field
+      ><v-text-field label="Last Name" outlined dense></v-text-field
+      ><v-text-field label="Email" outlined dense></v-text-field>
+      <div class="edit-profile__form--social-sites">
+        <div class="edit-profile__form--social-sites-url">
+          https://www.facebook.com/
         </div>
         <v-text-field
-          :dense="$vuetify.breakpoint.xsOnly"
-          append-icon="mdi-web"
-          label="Personal site"
+          dense
+          append-icon="mdi-facebook"
+          label="Facebook username"
           outlined
         ></v-text-field>
-        <v-card-actions
-          ><v-btn rounded class="white--text pa-5" color="teal lighten-1"
-            >save changes</v-btn
-          ></v-card-actions
-        >
-      </v-form></v-card-text
-    >
+      </div>
+      <div class="edit-profile__form--social-sites">
+        <div class="edit-profile__form--social-sites-url">
+          https://www.twitter.com/
+        </div>
+        <v-text-field
+          dense
+          append-icon="mdi-twitter"
+          label="twitter username"
+          outlined
+        ></v-text-field>
+      </div>
+      <div class="edit-profile__form--social-sites">
+        <div class="edit-profile__form--social-sites-url">
+          https://www.linkidin.com/
+        </div>
+        <v-text-field
+          dense
+          append-icon="mdi-twitter"
+          label="Linkidin username"
+          outlined
+        ></v-text-field>
+      </div>
+      <v-text-field
+        dense
+        append-icon="mdi-web"
+        label="Personal site"
+        outlined
+      ></v-text-field>
+      <v-card-actions
+        ><v-btn rounded class="white--text pa-5" color="teal lighten-1"
+          >save changes</v-btn
+        ></v-card-actions
+      >
+    </v-form>
   </v-card>
 </template>
 
@@ -103,4 +61,23 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped lang="scss">
+@import '/assets/scss/abstracts/mixins';
+
+.edit-profile {
+  @include userEdit;
+  &__heading {
+    @include userEditHeading;
+  }
+  &__form {
+    &--social-sites {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &--social-sites-url {
+      @include socialLink;
+    }
+  }
+}
+</style>

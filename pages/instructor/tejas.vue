@@ -85,7 +85,9 @@
     </div>
     <div class="app-row instructor__courses-list">
       <div class="instructor__courses-list--number">My Courses (25)</div>
-      <div class="instructor__courses__list--carousel"><CourseCardList /></div>
+      <div class="instructor__courses__list--carousel">
+        <InstructorCoursesList />
+      </div>
     </div>
   </section>
 </template>

@@ -1,8 +1,6 @@
 <template>
-  <v-card class="mt-5 ma-0 px-1 px-md-3 mx-8 ml-md-15" flat>
-    <v-card-title
-      class="text--primary text-h4 font-weight-bold"
-      style="word-break: keep-all"
+  <v-card flat>
+    <v-card-title class="no-word-break"
       ><HeadingBlackH2>Course Content</HeadingBlackH2></v-card-title
     >
     <v-expansion-panels accordion multiple>

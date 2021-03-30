@@ -3,12 +3,12 @@
     class="mx-auto"
     :width="Number(width)"
     height="max-content"
-    style="top: 150px; position: sticky"
+    style="top: 100px; position: sticky"
   >
     <video
       src="/videos/delicate.mp4"
       controls
-      poster="/static/images/tejasfb.jpg"
+      poster="/images/tejasfb.jpg"
       width="100%"
       height="auto"
     ></video>

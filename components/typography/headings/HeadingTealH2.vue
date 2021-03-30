@@ -1,13 +1,14 @@
 <template>
-  <h2 class="heading__teal--large">
+  <h2 class="heading__teal-h2">
     <slot></slot>
   </h2>
 </template>
 <style scoped lang="scss">
-.heading__teal--large {
+@import '/assets/scss/abstracts/variables';
+.heading__teal-h2 {
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
-  color: teal;
+  color: $color-teal-dark;
   font-size: 1.875rem;
 }
 </style>

@@ -1,48 +1,24 @@
 <template>
-  <v-row>
-    <v-col cols="12" md="8" class="pa-0">
-      <v-row
-        class="black py-10 pl-2 white--text mx-0"
-        :class="{ fullWidth: checkBreakpoint }"
-      >
-        <CourseDescriptionHeadingBlack width="400" />
-      </v-row>
-      <v-row v-if="$vuetify.breakpoint.smAndDown">
-        <CourseDescriptionCard width="400" />
-      </v-row>
-      <v-row>
+  <section class="course">
+    <!-- <CourseDescriptionHeadingBlack /> -->
+    <div class="app-row">
+      <div class="app-col-3-of-4 course__info">
         <CourseLearnList />
-      </v-row>
-      <v-row>
         <CourseContentList />
-      </v-row>
-      <v-row>
         <CourseRequirements />
-      </v-row>
-      <v-row>
         <CourseDescription />
-      </v-row>
-      <CourseInstructor />
-    </v-col>
-    <v-col v-if="$vuetify.breakpoint.mdAndUp" cols="12" md="4">
-      <CourseDescriptionCard width="400" />
-    </v-col>
-  </v-row>
+        <CourseInstructor />
+      </div>
+      <!-- <div class="app-col-1-of-4">
+        <CourseDescriptionCard />
+      </div> -->
+    </div>
+  </section>
 </template>
 
 <script>
 export default {
   layout: 'courseDescription',
-  data() {
-    return {
-      rating: 5,
-    }
-  },
-  computed: {
-    checkBreakpoint() {
-      return this.$vuetify.breakpoint.smAndUp
-    },
-  },
   head() {
     return {
       title: 'Advanced Node Bootcamp',
@@ -50,8 +26,22 @@ export default {
   },
 }
 </script>
-<style scoped>
-.fullWidth {
-  width: 100vw;
+<style scoped lang="scss">
+@import '/assets/scss/abstracts/variables';
+.course {
+  &__heading {
+    background-color: $color-black-pure;
+    width: 100vw;
+    margin: 0;
+  }
+
+  &__info {
+    & > * {
+      margin-top: 3rem;
+    }
+    &:last-child {
+      margin-bottom: 5rem;
+    }
+  }
 }
 </style>

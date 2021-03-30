@@ -1,14 +1,14 @@
 <template>
-  <v-card width="800" max-width="90%" class="mx-auto mt-10" outlined>
-    <v-card-title>Close account </v-card-title>
+  <v-card class="edit-delete" outlined>
+    <HeadingBlackH4 class="edit-delete__heading">Delete Account</HeadingBlackH4>
     <v-divider></v-divider>
-    <v-card-subtitle>Close your account permanently.</v-card-subtitle>
+    <div class="edit-delete__info">Close your account permanently.</div>
     <v-divider></v-divider>
-    <v-card-text class="font-weight-medium text-body-1 black--text">
-      <div class="mb-3">Close Your Account</div>
-      <div>
-        <span style="color: red">Warning:</span> If you close your account, you
-        will be unsubscribed from your 1 course, and will lose access forever.
+    <v-card-text class="edit-delete__warning">
+      <div class="edit-delete__warning--title">Close Your Account</div>
+      <div class="edit-delete__warning--message">
+        <span>Warning:</span> If you close your account, you will be
+        unsubscribed from your 1 course, and will lose access forever.
       </div>
     </v-card-text>
     <v-card-actions
@@ -25,4 +25,22 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped lang="scss">
+@import '/assets/scss/abstracts/mixins';
+.edit-delete {
+  @include userEdit;
+
+  &__heading {
+    @include userEditHeading;
+  }
+  &__info {
+    padding: 1rem 0.5rem;
+  }
+  &__warning {
+    &--title {
+    }
+    &--message {
+    }
+  }
+}
+</style>

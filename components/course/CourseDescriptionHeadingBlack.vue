@@ -1,9 +1,7 @@
 <template>
-  <div class="ml-12 mt-10">
-    <h4 class="white--text text-h4 font-weight-bold">
-      Node JS: Advanced Concepts
-    </h4>
-    <p class="font-weight-medium text-subtitle-1 mt-3 mb-0" style="width: 70%">
+  <div>
+    <h4>Node JS: Advanced Concepts</h4>
+    <p>
       Get advanced with Node.Js! Learn caching with Redis, speed up through
       clustering, and add image upload with S3 and Node!
     </p>

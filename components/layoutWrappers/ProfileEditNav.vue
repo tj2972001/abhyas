@@ -1,29 +1,19 @@
 <template>
-  <div>
-    <div class="mt-10 mb-3 text-h4 text-md-h3 font-weight-bold black--text">
-      Account Settings
-    </div>
-    <v-sheet class="mx-auto mt-10">
-      <v-slide-group multiple show-arrows>
-        <v-slide-item v-for="option in profileEditOptions" :key="option.name">
-          <v-btn
-            :small="$vuetify.breakpoint.smAndDown"
-            active-class="purple white--text"
-            depressed
-            rounded
-            :to="`${option.link}`"
-          >
-            <fa-icon
-              class="px-2"
-              :name="option.icon"
-              scale="2"
-              color="#000"
-            ></fa-icon>
-            {{ option.name }}
-          </v-btn>
-        </v-slide-item>
-      </v-slide-group>
-    </v-sheet>
+  <div class="user-edit-wrapper">
+    <HeadingBlackH2 class="user-edit-wrapper__heading"
+      >Accounts Settings</HeadingBlackH2
+    >
+    <v-tabs class="user-edit-wrapper__options" next-icon prev-icon show-arrows>
+      <v-tab
+        v-for="option in profileEditOptions"
+        :key="option"
+        :to="`${option.link}`"
+        class="user-edit-wrapper__options--option"
+      >
+        <fa-icon class="px-2" :name="option.icon" scale="2"></fa-icon>
+        {{ option.name }}
+      </v-tab>
+    </v-tabs>
   </div>
 </template>
 <script>
@@ -61,3 +51,15 @@ export default {
   }),
 }
 </script>
+<style lang="scss" scoped>
+.user-edit-wrapper {
+  margin-top: 3rem;
+  &__heading {
+    margin-bottom: 2rem;
+  }
+  &__options {
+    &--option {
+    }
+  }
+}
+</style>

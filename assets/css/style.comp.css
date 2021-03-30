@@ -45,15 +45,7 @@ font-family: 'Train One', cursive;
  */
 .blueishLinearGrad {
   text-transform: uppercase;
-  color: #42A5F5; }
-
-.paragraph {
-  font-size: 1rem;
-  font-family: 'Roboto', serif;
-  line-height: 1.7;
-  padding-left: 1rem;
-  padding-bottom: 1.3rem;
-  color: #424242; }
+  color: #EF5350; }
 
 /* Applly this class when its childrens are list-items and we don't want bullets*/
 .noBullets li {
@@ -70,9 +62,6 @@ font-family: 'Train One', cursive;
   color: #E040FB; }
 
 /******************************************************************/
-.no-word-break {
-  word-break: keep-all; }
-
 .app-row {
   max-width: 71.25rem;
   margin: 0 auto; }
@@ -86,7 +75,7 @@ font-family: 'Train One', cursive;
       max-width: 50rem;
       padding: 0 3rem; } }
   .app-row::after {
-    content: '';
+    content: "";
     display: table;
     clear: both; }
   .app-row [class^="app-col-"] {
