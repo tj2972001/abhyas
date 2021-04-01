@@ -1,23 +1,5 @@
-# abhyas
+# Welcome to Abhyas
 
-## Build Setup
-
-
-### - frontendDev branch is having frontend
-
-```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+This app is inspired from Udemy
+**Frontend on Netlify (static): **https://6065d59a2479d24997016cf8--objective-shirley-34d4da.netlify.app/
+**Frontend on heroku: ** https://abhyass.herokuapp.com/
