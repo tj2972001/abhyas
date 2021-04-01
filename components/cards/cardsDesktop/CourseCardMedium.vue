@@ -1,7 +1,7 @@
 <template>
   <v-card class="d-flex mb-5 align-center" height="max-content" outlined>
     <img
-      src="/images/tejasfb.jpg"
+      src="https://picsum.photos/400/250"
       style="height: 100%; max-height: 200px; width: 100%; max-width: 200px"
     />
     <div class="ml-10">

@@ -4,8 +4,6 @@ export default function ({ redirect }) {
       window.onNuxtReady(() => {
         window.$nuxt.$router.push('/small-screen')
       })
-    } else {
-      alert(window.innerWidth)
     }
   }
 }

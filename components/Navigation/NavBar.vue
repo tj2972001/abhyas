@@ -29,7 +29,7 @@
         ><fa-icon scale="1.6" name="regular/heart"></fa-icon
       ></span>
       <v-avatar rounded="false"
-        ><v-img src="/images/tejasfb.jpg"></v-img
+        ><v-img src="https://picsum.photos/400/250"></v-img
       ></v-avatar>
     </v-app-bar>
     <v-app-bar class="hidden-md-and-up" absolute app>

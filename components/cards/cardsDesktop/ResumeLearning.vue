@@ -1,7 +1,7 @@
 <template>
   <v-card flat outlined class="resume-learning">
     <img
-      src="/images/jonasjscourseimage.jpg"
+      src="https://picsum.photos/400/250"
       alt="course-image"
       class="resume-learning__course-image"
     />

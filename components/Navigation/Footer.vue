@@ -1,72 +1,90 @@
 <template>
-  <v-footer color="#eee">
-    <v-container>
-      <v-row>
-        <v-col
-          cols="12"
-          sm="6"
-          :class="$vuetify.breakpoint.smAndDown ? 'ma-0 pa-0' : ''"
-        >
-          <v-list
-            color="#eee"
-            :class="$vuetify.breakpoint.smAndDown ? 'ma-0 pa-0' : ''"
-          >
-            <nuxt-link to="/">Abhyas for business</nuxt-link>
-            <nuxt-link to="/">Teach on Abhyas</nuxt-link>
-            <nuxt-link to="/">Get the app</nuxt-link>
-            <nuxt-link to="/">About us</nuxt-link>
-            <nuxt-link to="/">Contact us</nuxt-link>
-          </v-list>
-        </v-col>
-        <v-col
-          cols="12"
-          sm="6"
-          :class="$vuetify.breakpoint.smAndDown ? 'ma-0 pa-0' : ''"
-        >
-          <v-list
-            color="#eee"
-            :class="$vuetify.breakpoint.smAndDown ? 'ma-0 pa-0' : ''"
-          >
-            <nuxt-link to="/">Careers</nuxt-link>
-            <nuxt-link to="/">Blog</nuxt-link>
-            <nuxt-link to="/">Help and support</nuxt-link>
-            <nuxt-link to="/">Affiliate</nuxt-link>
-          </v-list>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col cols="12" md="6">
-          <v-avatar><v-img src="/images/v.png"></v-img></v-avatar>
-        </v-col>
-        <v-col cols="12" md="6">
-          <SearchBarInNav :search="search" />
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col cols="12">
-          {{ new Date().getFullYear() }} - Abhyass | All rights reserved
-        </v-col>
-      </v-row>
-    </v-container>
-  </v-footer>
+  <footer class="app-footer">
+    <ul id="app-footer-container" class="app-footer__list-container noBullets">
+      <li class="app-footer__list-container--item">
+        <nuxt-link to="/">Abhyas for business</nuxt-link>
+      </li>
+      <li class="app-footer__list-container--item">
+        <nuxt-link to="/">Get the app</nuxt-link>
+      </li>
+      <li class="app-footer__list-container--item">
+        <nuxt-link to="/">About us</nuxt-link>
+      </li>
+      <li class="app-footer__list-container--item">
+        <nuxt-link to="/">Contact us</nuxt-link>
+      </li>
+      <li class="app-footer__list-container--item">
+        <nuxt-link to="/">Careers</nuxt-link>
+      </li>
+      <li class="app-footer__list-container--item">
+        <nuxt-link to="/">Blog</nuxt-link>
+      </li>
+      <li class="app-footer__list-container--item">
+        <nuxt-link to="/">Help and support</nuxt-link>
+      </li>
+      <li class="app-footer__list-container--item">
+        <nuxt-link to="/">Affiliate</nuxt-link>
+      </li>
+      <li class="app-footer__list-container--item">
+        <nuxt-link to="/">Get the app</nuxt-link>
+      </li>
+      <li class="app-footer__list-container--item">
+        <nuxt-link to="/">About us</nuxt-link>
+      </li>
+      <li class="app-footer__list-container--item">
+        <nuxt-link to="/">Contact us</nuxt-link>
+      </li>
+      <li class="app-footer__list-container--item">
+        <nuxt-link to="/">Careers</nuxt-link>
+      </li>
+      <li class="app-footer__list-container--item">
+        <nuxt-link to="/">Blog</nuxt-link>
+      </li>
+      <li class="app-footer__list-container--item">
+        <nuxt-link to="/">Help and support</nuxt-link>
+      </li>
+    </ul>
+    <div class="app-footer__rights">
+      {{ new Date().getFullYear() }} - Abhyass | All rights reserved
+    </div>
+  </footer>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      search: '',
-    }
-  },
-}
+export default {}
 </script>
 
 <style scoped lang="scss">
-a {
-  color: #000;
-  margin: 0.3em;
+@import '/assets/scss/abstracts/variables';
+.app-footer {
+  padding: 2rem;
+  background-color: $color-grey-light;
+  a {
+    color: $color-black-pure;
+    text-decoration: none;
+    transition: all 0.2s;
+    &:hover {
+      text-decoration: underline;
+      color: $color-grey-dark;
+    }
+  }
+  &__list-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    &--item {
+      display: flex;
+      width: 50%;
+      margin-bottom: 0.2rem;
+      justify-content: space-between;
+    }
+  }
+  &__rights {
+    margin-top: 1rem;
+    font-weight: 700;
+  }
 }
-.v-list > * {
-  display: block;
+#app-footer-container {
+  padding: 0;
 }
 </style>

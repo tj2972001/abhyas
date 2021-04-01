@@ -5,7 +5,7 @@
     outlined
   >
     <img
-      src="/images/jonasjscourseimage.jpg"
+      src="https://picsum.photos/400/250"
       style="height: auto; width: 100%; max-width: 64px; max-height: 150px"
     />
     <div class="ml-4">

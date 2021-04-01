@@ -1,7 +1,7 @@
 <template>
   <v-card class="my-learnings-card-large" flat outlined>
     <v-img
-      src="/images/jonasjscourseimage.jpg"
+      src="https://picsum.photos/400/250"
       class="my-learnings-card-large__image"
     >
     </v-img>

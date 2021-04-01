@@ -26,7 +26,7 @@
         >
       </div>
       <div class="course-details__created-by">
-        Created by <nuxt-link to="/">Stphan Grider</nuxt-link>
+        Created by <nuxt-link to="/instructor/tejas">Stphan Grider</nuxt-link>
       </div>
       <div class="course-details__update">
         <div class="course-details__update--last-updated">

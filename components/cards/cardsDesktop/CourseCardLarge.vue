@@ -1,9 +1,6 @@
 <template>
   <v-card class="course-card-large" flat outlined>
-    <img
-      src="/images/jonasjscourseimage.jpg"
-      class="course-card-large__image"
-    />
+    <img src="https://picsum.photos/400/250" class="course-card-large__image" />
 
     <div class="course-card-large__title">
       The complete Javascript Bootcamp 2020 : Build Real Projects
