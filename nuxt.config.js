@@ -1,7 +1,6 @@
-import colors from 'vuetify/es5/util/colors'
-
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
+  ssr: false,
   head: {
     titleTemplate: '%s',
     title: 'Abhyas',
@@ -69,5 +68,8 @@ export default {
   },
   styleResources: {
     scss: ['~/assets/scss/variables.scss'],
+  },
+  router: {
+    middleware: 'check-before-move',
   },
 }

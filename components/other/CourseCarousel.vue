@@ -17,9 +17,9 @@ export default {
     return {
       options: {
         responsive: [
-          { end: 576, size: 2 },
-          { start: 576, end: 668, size: 3 },
-          { start: 668, end: 992, size: 4 },
+          { end: 600, size: 2 },
+          { start: 600, end: 800, size: 3 },
+          { start: 800, end: 1200, size: 4 },
           { size: 5 },
         ],
       },

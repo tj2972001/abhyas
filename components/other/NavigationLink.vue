@@ -1,5 +1,7 @@
 <template>
-  <a class="linkNavigationHeader ma-5"><slot></slot></a>
+  <nuxt-link to="/home/my-learnings" class="linkNavigationHeader ma-5"
+    ><slot></slot
+  ></nuxt-link>
 </template>
 
 <script>

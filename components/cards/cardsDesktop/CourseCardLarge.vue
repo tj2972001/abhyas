@@ -1,10 +1,5 @@
 <template>
-  <v-card
-    v-if="$vuetify.breakpoint.smAndUp"
-    class="course-card-large"
-    flat
-    outlined
-  >
+  <v-card class="course-card-large" flat outlined>
     <img
       src="/images/jonasjscourseimage.jpg"
       class="course-card-large__image"
@@ -16,7 +11,6 @@
     <div class="text-secondary course-card-large__author">Brad traversy</div>
     <div class="course-card-large__ratings">
       <v-rating
-        v-model="rating"
         class="course-card-large__ratings--ratingsBar"
         readonly
         dense

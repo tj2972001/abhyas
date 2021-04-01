@@ -1,19 +1,19 @@
 <template>
-  <section class="course">
-    <!-- <CourseDescriptionHeadingBlack /> -->
-    <div class="app-row">
-      <div class="app-col-3-of-4 course__info">
-        <CourseLearnList />
-        <CourseContentList />
-        <CourseRequirements />
-        <CourseDescription />
-        <CourseInstructor />
+  <v-app>
+    <section class="course">
+      <CourseDescriptionHeadingBlack />
+      <CourseDescriptionCard />
+      <div class="app-row">
+        <div class="app-col-3-of-4 course__info">
+          <CourseLearnList />
+          <CourseContentList />
+          <CourseRequirements />
+          <CourseDescription />
+          <CourseInstructor />
+        </div>
       </div>
-      <!-- <div class="app-col-1-of-4">
-        <CourseDescriptionCard />
-      </div> -->
-    </div>
-  </section>
+    </section>
+  </v-app>
 </template>
 
 <script>
@@ -29,19 +29,8 @@ export default {
 <style scoped lang="scss">
 @import '/assets/scss/abstracts/variables';
 .course {
-  &__heading {
-    background-color: $color-black-pure;
-    width: 100vw;
-    margin: 0;
-  }
-
-  &__info {
-    & > * {
-      margin-top: 3rem;
-    }
-    &:last-child {
-      margin-bottom: 5rem;
-    }
+  &__info > * {
+    margin-bottom: 3rem;
   }
 }
 </style>

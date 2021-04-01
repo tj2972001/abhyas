@@ -1,35 +1,28 @@
 <template>
-  <v-card
-    class="mx-auto"
-    :width="Number(width)"
-    height="max-content"
-    style="top: 100px; position: sticky"
-  >
+  <v-card class="course-purchase">
     <video
       src="/videos/delicate.mp4"
       controls
-      poster="/images/tejasfb.jpg"
-      width="100%"
-      height="auto"
+      class="course-purchase__preview-video"
     ></video>
-    <v-card-title class="d-flex">
-      <div class="text-h4 mr-4 font-weight-bold">$499</div>
-      <div
-        class="text-subtitle-1 mr-4 text-decoration-line-through font-weight-medium"
-      >
+    <div class="d-flex course-purchase__heading">
+      <div class="course-purchase__heading--price">$499</div>
+      <div class="font-weight-medium course-purchase__heading--dicounted-price">
         $1200
       </div>
-      <div class="text-subtitle-2 text--secondary font-weight-medium">
-        95% off
-      </div></v-card-title
-    >
-    <v-card-actions class="d-flex flex-column">
-      <v-btn width="80%" class="white--text" color="pink lighten-1">
+      <div class="course-purchase__heading--total-off">95% off</div>
+    </div>
+    <v-card-actions class="d-flex flex-column course-purchase__purchase">
+      <v-btn
+        width="80%"
+        class="white--text course-purchase__purchase--buy-now"
+        color="pink lighten-1"
+      >
         Buy Now</v-btn
       >
       <v-btn
         width="80%"
-        class="mt-3"
+        class="mt-3 course-purchase__purchase--add-to-cart"
         style="transform: translateX(-1%)"
         color="pink lighten-1"
         outlined
@@ -37,35 +30,57 @@
         Add to cart</v-btn
       >
     </v-card-actions>
-    <div class="font-weight-medium text--secondary text-body-1 pl-3 mt-4">
-      This course includes
-    </div>
-    <v-card-actions class="d-flex flex-column text-body-2 align-start">
-      <div class="d-flex mt-2">
-        <v-icon small class="px-3">mdi-television-play</v-icon>
-        <div>12 hrs of on-demand video</div>
+    <div class="course-purchase__includes">This course includes</div>
+    <div class="course-purchase__features">
+      <div class="course-purchase__features--duration">
+        <v-icon small>mdi-television-play</v-icon>
+        <div>
+          12 hrs of on-demand video Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Mollitia sint vel tempora facere possimus, et a ipsa
+          adipisci at nisi obcaecati, omnis porro nihil neque exercitationem
+          provident esse praesentium architecto.
+        </div>
       </div>
-      <div class="d-flex mt-2">
-        <v-icon small class="px-3">mdi-clipboard-text-outline</v-icon>
+      <div course-purchase__features--total-articles>
+        <v-icon small>mdi-clipboard-text-outline</v-icon>
         <div>70 articles</div>
       </div>
-      <div class="d-flex mt-2">
-        <v-icon small class="px-3">mdi-folder-download-outline</v-icon>
+      <div class="course-purchase__features--total-resources">
+        <v-icon small>mdi-folder-download-outline</v-icon>
         <div>20 downloadable resources</div>
       </div>
-      <div class="d-flex mt-2">
-        <v-icon small class="px-3">mdi-infinity</v-icon>
+      <div class="course-purchase__features--access-time">
+        <v-icon small>mdi-infinity</v-icon>
         <div>full lifetime access</div>
       </div>
-      <div class="d-flex mt-2">
-        <v-icon small class="px-3">mdi-certificate</v-icon>
+      <div class="course-purchase__feature--certificate">
+        <v-icon small>mdi-certificate</v-icon>
         <div>Certificate of completion</div>
       </div>
-    </v-card-actions>
+    </div>
   </v-card>
 </template>
 <script>
-export default {
-  props: ['width', 'marginTop'],
-}
+export default {}
 </script>
+<style lang="scss" scoped>
+.course-purchase {
+  width: 25%;
+  position: absolute;
+  z-index: 15;
+  right: 3rem;
+  top: 3rem;
+  &__preview-video {
+    width: 100%;
+    height: auto;
+  }
+  &__heading {
+    &--price {
+    }
+    &--dicounted-price {
+    }
+    &--total-off {
+    }
+  }
+}
+</style>

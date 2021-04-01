@@ -81,11 +81,13 @@
 @import '/assets/scss/abstracts/variables';
 .course-learn-list {
   background-color: $color-grey-light;
+  max-width: 80%;
   &__list {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     max-width: 100%;
+    padding: 1rem;
     li {
       display: flex;
       width: 48%;
