@@ -1,16 +1,14 @@
-<template>
-  <InstructorPanel />
-</template>
+<template><InstructorPanel /></template>
 
 <script>
 export default {
+  layout: 'noNavBar',
   head() {
     return {
       title: 'Instructor view',
     }
   },
-  layout: 'teacher',
 }
 </script>
 
-<style></style>
+<style lang="scss" scoped></style>

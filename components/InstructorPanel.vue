@@ -1,67 +1,55 @@
 <template>
-  <v-navigation-drawer permanent expand-on-hover height="100vh" color="#52143e">
-    <v-list class="amber--text">
-      <v-list-item class="px-2">
-        <v-list-item-avatar>
-          <v-img src="https://randomuser.me/api/portraits/women/85.jpg"></v-img>
-        </v-list-item-avatar>
-      </v-list-item>
-    </v-list>
-
-    <v-list nav dense class="white--text pa-0">
-      <nuxt-link to="/" class="d-flex align-center darkenSideBarOnHover">
-        <fa-icon class="mr-1" color="#fff" scale="1.9" name="film"></fa-icon>
-        <span class="sideNavBarText">Courses</span>
+  <v-navigation-drawer permanent expand-on-hover class="instructor-panel">
+    <v-list nav dense class="white--text pa-0 instructor-panel__list">
+      <nuxt-link to="/" class="d-flex align-center">
+        <v-icon color="white" large>mdi-play-box-outline</v-icon>
+        <span>Courses</span>
       </nuxt-link>
-      <nuxt-link to="/" class="d-flex align-center darkenSideBarOnHover">
-        <fa-icon
-          class="mr-1"
-          color="#fff"
-          scale="1.9"
-          name="regular/envelope"
-        ></fa-icon>
-        <span class="sideNavBarText">Communication</span>
+      <nuxt-link to="/" class="d-flex align-center">
+        <v-icon color="white" large>mdi-email-outline</v-icon>
+        <span>Communication</span>
       </nuxt-link>
-      <nuxt-link to="/" class="d-flex align-center darkenSideBarOnHover">
-        <fa-icon
-          class="mr-1"
-          color="#fff"
-          scale="1.9"
-          name="chart-bar"
-        ></fa-icon>
-        <span class="sideNavBarText">Performance</span>
+      <nuxt-link to="/" class="d-flex align-center">
+        <v-icon color="white" large>mdi-chart-box-outline</v-icon>
+        <span>Performance</span>
       </nuxt-link>
-      <nuxt-link to="/" class="d-flex align-center darkenSideBarOnHover">
-        <fa-icon class="mr-1" color="#fff" scale="1.9" name="tools"></fa-icon>
-        <span class="sideNavBarText">Tools</span>
+      <nuxt-link to="/" class="d-flex align-center">
+        <v-icon color="white" large>mdi-tools</v-icon>
+        <span>Tools</span>
       </nuxt-link>
-      <nuxt-link to="/" class="d-flex align-center darkenSideBarOnHover">
-        <fa-icon
-          class="mr-1"
-          color="#fff"
-          scale="1.9"
-          name="question-circle"
-        ></fa-icon>
-        <span class="sideNavBarText">Resources</span>
+      <nuxt-link to="/" class="d-flex align-center">
+        <v-icon color="white" large>mdi-comment-question-outline</v-icon>
+        <span>Resources</span>
       </nuxt-link>
     </v-list>
   </v-navigation-drawer>
 </template>
-<style scoped>
-.sideNavBarText {
-  font-size: 1.4em;
-  font-weight: 300;
-  margin-left: 1.3em;
-}
-.darkenSideBarOnHover {
-  padding: 1.5em 0.4em;
-}
-.darkenSideBarOnHover:hover {
-  border-left: 0.3em solid #ec5252;
-  background-color: #81386a;
-}
-a {
-  text-decoration: none;
-  color: #fff;
+<script></script>
+<style scoped lang="scss">
+@import '/assets/scss/abstracts/variables';
+.instructor-panel {
+  display: inline-block;
+  --color-pink: rgb(82, 20, 62);
+  background-color: var(--color-pink);
+  &__list {
+    margin-top: 5rem;
+    height: 100vh;
+    background-color: var(--color-pink);
+    a {
+      padding: 1rem 0.2rem;
+      border-left: 0.3rem solid;
+      border-color: var(--color-pink);
+      text-decoration: none;
+      color: $color-white-pure !important;
+      &:hover {
+        border-left: 0.3rem solid #de0f28;
+        background-color: rgb(120, 16, 85);
+      }
+      span {
+        font-size: 1.4rem;
+        margin-left: 1.3rem;
+      }
+    }
+  }
 }
 </style>

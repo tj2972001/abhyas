@@ -48,15 +48,20 @@ export default {
     height: auto;
   }
   &__title {
-    margin-top: 0.325rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+    line-height: 1.2;
     word-break: keep-all;
     font-family: 'Roboto', Serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1rem;
   }
   &__author {
-    margin-top: 0.5rem;
-    font-size: 0.875rem;
+    line-height: 1.05;
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    margin-bottom: 0.25rem;
     color: $color-grey-medium;
   }
 }

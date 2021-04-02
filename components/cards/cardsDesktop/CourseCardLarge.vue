@@ -1,55 +1,72 @@
 <template>
-  <v-card class="course-card-large" flat outlined>
+  <div class="course-card-large">
     <img src="https://picsum.photos/400/250" class="course-card-large__image" />
 
     <div class="course-card-large__title">
       The complete Javascript Bootcamp 2020 : Build Real Projects
     </div>
-    <div class="text-secondary course-card-large__author">Brad traversy</div>
+    <div class="course-card-large__author">Brad traversy</div>
     <div class="course-card-large__ratings">
-      <v-rating
+      <span class="course-card-large__ratings--ratingsNumber">{{
+        rating
+      }}</span>
+      <star-rating
+        v-model="rating"
+        :show-rating="false"
+        star-size="12"
+        :increment="0.1"
+        :inline="true"
+        active-border-color="#ffd055"
+        read-only="true"
         class="course-card-large__ratings--ratingsBar"
-        readonly
-        dense
-        half-increments
-        :small="$vuetify.breakpoint.mdAndDown"
-      ></v-rating>
-      <span class="text-secondary course-card-large__ratings--ratingsCount"
-        >554 ratings</span
-      >
+      />
+      <span class="course-card-large__ratings--ratingsCount">(322,165)</span>
     </div>
 
     <div class="course-card-large__price">
       <span class="course-card-large__price--amount"> $700 </span>
-      <span class="course-card-large__price--discountedAmount">$1200</span>
+      <!-- <span class="course-card-large__price--discountedAmount">$1200</span> -->
     </div>
-    <div class="course-card-large__details no-word-break">
-      <span>13 hours - 23 sections - All levels </span>
-    </div>
-  </v-card>
+  </div>
 </template>
-<script></script>
+<script>
+import StarRating from 'vue-star-rating'
+export default {
+  components: {
+    StarRating,
+  },
+  data() {
+    return {
+      rating: (Math.random() * 5).toFixed(1),
+    }
+  },
+}
+</script>
 <style scoped lang="scss">
 @import '/assets/scss/abstracts/variables';
 .course-card-large {
-  width: 20rem;
-  & > *:not(:first-child) {
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
-  }
+  width: 100%;
+  padding: 0;
+  margin: 0;
   &__image {
     width: 100%;
   }
   &__title {
-    margin-top: 0.625rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+    line-height: 1.2;
     word-break: keep-all;
     font-family: 'Roboto', Serif;
-    font-weight: 500;
-    font-size: 1.125rem;
+    font-weight: 700;
+    font-size: 1rem;
   }
   &__author {
-    margin-top: 0.5rem;
-    font-size: 0.875rem;
+    line-height: 1.05;
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    margin-bottom: 0.25rem;
+    color: $color-grey-medium;
   }
   &__ratings {
     height: 0.625rem;
@@ -58,32 +75,35 @@
     font-size: 0.875rem;
     margin-top: 0.625rem;
     margin-bottom: 0.5rem;
+    line-height: 1.05rem;
+
+    &--ratingsNumber {
+      font-size: 0.875rem;
+      font-weight: 700;
+      margin-right: 0.25rem;
+      color: $color-orange-dark;
+    }
     &--ratingsBar {
     }
     &--ratingsCount {
-      margin-left: 0.625rem;
-      align-self: center;
+      font-size: 0.75rem;
+      font-weight: 500;
+      margin-left: 0.25rem;
+      color: $color-grey-dark;
     }
   }
   &__price {
-    margin-top: 0.625rem;
+    padding: 0.25rem 0;
+    color: $color-black-pure;
     &--amount {
-      font-weight: bold;
-      color: $color-orange-medium;
-      font-size: 1.125rem;
+      font-weight: 700;
+      font-size: 1rem;
     }
     &--discountedAmount {
       text-decoration: line-through;
-      margin-left: 1.25rem;
-      font-size: 1rem;
+      font-weight: 700;
+      font-size: 0.7rem;
     }
-  }
-  &__details {
-    margin-top: 0.3rem;
-    font-family: 'Roboto', Serif;
-    font-weight: 500;
-    font-size: 0.875rem;
-    margin-bottom: 0.625rem;
   }
 }
 </style>

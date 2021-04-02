@@ -9,7 +9,7 @@
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
   color: $color-black-pure;
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   //text--primary text-h4 font-weight-bold no-word-break
 }
 </style>

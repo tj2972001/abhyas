@@ -75,6 +75,14 @@ export default {
       align-items: center;
       justify-content: center;
     }
+    & > :first-child {
+      margin-top: 1rem;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+    & > *:not(:last-child, :first-child) {
+      margin: 0 1.5rem;
+    }
     &--social-sites-url {
       @include socialLink;
     }

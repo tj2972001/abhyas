@@ -1,7 +1,6 @@
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   ssr: false,
-  target: 'static',
   head: {
     titleTemplate: '%s',
     title: 'Abhyas',
