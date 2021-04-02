@@ -1,8 +1,8 @@
 <template>
   <section class="teacher-courses">
-    <InstructorPanel />
-
-    <HeadingBlackH2 class="teacher-courses__heading">Courses</HeadingBlackH2>
+    <HeadingBlackH4 class="teacher-courses__heading"
+      >Your courses</HeadingBlackH4
+    >
     <div class="teacher-courses__list">
       <div class="teacher-courses__list-item">
         <img
@@ -13,11 +13,15 @@
         <div class="teacher-courses__list-item--finish">Finish your course</div>
         <v-progress-linear
           v-model="knowledge"
-          height="15"
           class="teacher-courses__list-item--progress"
+          color="rgb(159, 207, 207)"
+          height="20"
         >
           <strong>{{ Math.ceil(knowledge) }}% completed</strong>
         </v-progress-linear>
+        <button class="teacher-courses__list-item--manage-course">
+          Manage course &rarr;
+        </button>
       </div>
       <div class="teacher-courses__list-item">
         <img
@@ -28,11 +32,53 @@
         <div class="teacher-courses__list-item--finish">Finish your course</div>
         <v-progress-linear
           v-model="knowledge"
-          height="15"
           class="teacher-courses__list-item--progress"
+          color="rgb(159, 207, 207)"
+          height="20"
         >
           <strong>{{ Math.ceil(knowledge) }}% completed</strong>
         </v-progress-linear>
+        <button class="teacher-courses__list-item--manage-course">
+          Manage course &rarr;
+        </button>
+      </div>
+      <div class="teacher-courses__list-item">
+        <img
+          src="https://picsum.photos/400/250"
+          class="teacher-courses__list-item--image"
+        />
+        <div class="teacher-courses__list-item--title">vue complete pack</div>
+        <div class="teacher-courses__list-item--finish">Finish your course</div>
+        <v-progress-linear
+          v-model="knowledge"
+          class="teacher-courses__list-item--progress"
+          color="rgb(159, 207, 207)"
+          height="20"
+        >
+          <strong>{{ Math.ceil(knowledge) }}% completed</strong>
+        </v-progress-linear>
+        <button class="teacher-courses__list-item--manage-course">
+          Manage course &rarr;
+        </button>
+      </div>
+      <div class="teacher-courses__list-item">
+        <img
+          src="https://picsum.photos/400/250"
+          class="teacher-courses__list-item--image"
+        />
+        <div class="teacher-courses__list-item--title">vue complete pack</div>
+        <div class="teacher-courses__list-item--finish">Finish your course</div>
+        <v-progress-linear
+          v-model="knowledge"
+          class="teacher-courses__list-item--progress"
+          color="rgb(159, 207, 207)"
+          height="20"
+        >
+          <strong>{{ Math.ceil(knowledge) }}% completed</strong>
+        </v-progress-linear>
+        <button class="teacher-courses__list-item--manage-course">
+          Manage course &rarr;
+        </button>
       </div>
     </div>
   </section>
@@ -69,14 +115,30 @@ export default {
     &--title {
       margin-right: auto;
       margin-left: 1rem;
+      font-weight: 500;
+      font-size: 1.125rem;
     }
     &--finish {
+      font-weight: 400;
+      font-size: 0.875rem;
     }
     &--progress {
       max-width: 40%;
       margin-left: 1.7rem;
       strong {
+        color: $color-black-pure;
         font-size: 0.7rem;
+      }
+    }
+    &--manage-course {
+      background-color: $color-teal-dark;
+      padding: 0.5rem;
+      font-size: 0.8rem;
+      color: $color-white-pure;
+      border-radius: 5px;
+      margin-left: 1rem;
+      &:hover {
+        background-color: lighten($color-teal-dark, 2);
       }
     }
   }

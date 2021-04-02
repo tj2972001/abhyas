@@ -12,13 +12,11 @@
 
     <v-progress-linear
       v-model="knowledge"
-      :height="$vuetify.breakpoint.mdAndUp ? 20 : 15"
-      class="mx-auto my-3"
-      style="width: 90%"
+      height="15"
+      class="my-learnings-card-large__progress"
+      color="rgb(159, 207, 207)"
     >
-      <strong class="text-caption text-md-body-1"
-        >{{ Math.ceil(knowledge) }}% completed</strong
-      >
+      <strong>{{ Math.ceil(knowledge) }}% completed</strong>
     </v-progress-linear>
   </v-card>
 </template>
@@ -54,7 +52,7 @@ export default {
     word-break: keep-all;
     font-family: 'Roboto', Serif;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   &__author {
     line-height: 1.05;
@@ -63,6 +61,13 @@ export default {
     text-overflow: ellipsis;
     margin-bottom: 0.25rem;
     color: $color-grey-medium;
+  }
+  &__progress {
+    margin: 0.5rem auto;
+    width: 90%;
+    strong {
+      font-size: 0.7rem;
+    }
   }
 }
 </style>

@@ -1,29 +1,23 @@
 <template>
-  <div class="mx-10">
+  <div class="category">
     <section>
-      <HeadingTealH2 class="mt-10">Best express-js courses</HeadingTealH2>
+      <HeadingBlackH2>Best express-js courses</HeadingBlackH2>
       <CourseCarousel />
     </section>
     <section>
-      <HeadingTealH2 class="my-3">Hottest Express.js Courses</HeadingTealH2>
+      <HeadingBlackH2>Hottest Express.js Courses</HeadingBlackH2>
       <CourseCarousel />
     </section>
     <section>
-      <HeadingTealH2 class="my-3"
-        >Begineers favorite Express.js Courses</HeadingTealH2
-      >
+      <HeadingBlackH2>Begineers favorite Express.js Courses</HeadingBlackH2>
       <CourseCarousel />
     </section>
     <section>
-      <HeadingTealH2 class="my-3"
-        >Editor's choice Express.js Courses</HeadingTealH2
-      >
+      <HeadingBlackH2>Editor's choice Express.js Courses</HeadingBlackH2>
       <CourseCarousel />
     </section>
     <section>
-      <HeadingTealH2 class="my-3"
-        >All Express.js courses (12000 courses)</HeadingTealH2
-      >
+      <HeadingBlackH2>All Express.js courses (12000 courses)</HeadingBlackH2>
       <CourseCardMedium />
       <CourseCardMedium />
       <CourseCardMedium />
@@ -44,3 +38,10 @@ export default {
   layout: 'courseDescription',
 }
 </script>
+<style lang="scss" scoped>
+.category {
+  width: 90%;
+  max-width: 1300px;
+  margin: 3rem auto;
+}
+</style>

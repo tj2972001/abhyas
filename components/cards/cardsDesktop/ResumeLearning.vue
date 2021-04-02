@@ -36,7 +36,7 @@ export default {}
     margin-right: 1rem;
     margin-left: 1rem;
     &--course-name {
-      font-weight: 500;
+      font-weight: 700;
       color: $color-black-pure;
       font-size: 1rem;
     }

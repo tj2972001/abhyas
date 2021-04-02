@@ -47,12 +47,10 @@
 
 <script>
 import VueHorizontalList from 'vue-horizontal-list'
-// import Tabs from 'vue-tabs-with-active-line'
 export default {
   layout: 'courseDescription',
   components: {
     VueHorizontalList,
-    //    Tabs,
   },
   data() {
     return {

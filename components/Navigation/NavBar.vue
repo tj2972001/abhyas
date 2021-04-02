@@ -32,7 +32,7 @@
         ><v-img src="https://picsum.photos/400/250"></v-img
       ></v-avatar>
     </v-app-bar>
-    <v-app-bar class="hidden-md-and-up" absolute app>
+    <v-app-bar class="hidden-sm-and-up" absolute app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
     </v-app-bar>
   </div>
