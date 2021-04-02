@@ -23,4 +23,4 @@ This app is inspired from Udemy and would try to copy core features of the udemy
 3.  course management for instructor (adding videos,articles)
 4.  Filter for query search (like sort by best reviews, filter courses by duration,...)
 
-#### It's not mobile responsive yet
+#### It's not mobile responsive yet.
