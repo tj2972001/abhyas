@@ -46,6 +46,7 @@ export default {
 @import '/assets/scss/abstracts/variables';
 .course-card-large {
   width: 100%;
+  max-width: 18rem;
   padding: 0;
   margin: 0;
   &__image {
