@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="nav-bar-main">
     <v-navigation-drawer
       v-model="drawer"
-      class="hidden-sm-and-up"
+      class="hidden-sm-and-up nav-bar-main__drawer"
       fixed
       width="80%"
       app
@@ -14,23 +14,28 @@
       color="grey lighten-5"
       absolute
       app
-      class="hidden-sm-and-down"
+      class="hidden-sm-and-down nav-bar-main__bar"
     >
-      <img class="logo-nav" src="/images/v.png" />
-      <v-toolbar-title
-        ><h2 class="blueishLinearGrad">Abhyas</h2></v-toolbar-title
+      <img class="nav-bar-main__bar--logo-nav" src="/images/v.png" />
+      <v-toolbar-title class="nav-bar-main__bar--title"
+        ><h2>Abhyas</h2></v-toolbar-title
       >
-      <v-spacer></v-spacer>
-      <SearchBarInNav />
-      <navigation-link>My courses</navigation-link>
-      <navigation-link>Teach</navigation-link>
-      <Menu name="xsx" icon="dxed" />
-      <span class="ma-5"
-        ><fa-icon scale="1.6" name="regular/heart"></fa-icon
-      ></span>
-      <v-avatar rounded="false"
-        ><v-img src="https://picsum.photos/400/250"></v-img
-      ></v-avatar>
+      <SearchBarInNav class="nav-bar-main__bar--search" />
+      <div class="nav-bar-main__bar__container">
+        <navigation-link class="nav-bar-main__bar--menu"
+          >My courses</navigation-link
+        >
+        <navigation-link class="nav-bar-main__bar--menu">Teach</navigation-link>
+        <span class="nav-bar-main__bar--icon"
+          ><fa-icon scale="1.6" name="regular/heart"></fa-icon
+        ></span>
+        <span class="nav-bar-main__bar--icon"
+          ><fa-icon scale="1.6" name="regular/bell"></fa-icon
+        ></span>
+        <v-avatar rounded="false" class="nav-bar-main__bar--avatar"
+          ><v-img src="https://picsum.photos/400/250"></v-img
+        ></v-avatar>
+      </div>
     </v-app-bar>
     <v-app-bar class="hidden-sm-and-up" absolute app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
@@ -51,9 +56,46 @@ export default {
 // अभ्यास
 </script>
 
-<style scoped>
-.logo-nav {
-  height: 3rem;
-  width: 3rem;
+<style scoped lang="scss">
+@import '/assets/scss/abstracts/variables';
+.v-application a {
+  color: $color-black-pure;
+}
+.nav-bar-main {
+  &__drawer {
+  }
+  &__bar {
+    &__container {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      & > * {
+        font-size: 1.2rem;
+        margin-left: 1.5rem;
+      }
+    }
+    &--search {
+      margin-left: 2rem;
+    }
+    &--logo-nav {
+      height: 3rem;
+      width: 3rem;
+    }
+    &--title {
+      color: $color-skyblue-dark;
+      text-transform: uppercase;
+    }
+    &--menu {
+      text-decoration: none;
+      &:hover {
+        color: $color-pinkviolet-dark;
+        transition: all 0.3s;
+      }
+    }
+    &--icon {
+    }
+    &--avatar {
+    }
+  }
 }
 </style>

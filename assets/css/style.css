@@ -63,18 +63,17 @@ font-family: 'Train One', cursive;
   list-style: none; }
 
 /* By default Vuetify links are styled, to apply black color to them , use this class */
-.v-application .linkNavigationHeader {
-  color: #000; }
-
-.linkNavigationHeader {
-  font-size: 1.2rem; }
-
-.linkNavigationHeader:hover {
-  color: #E040FB; }
-
-/******************************************************************/
+/*******************************************************************/
 .no-word-break {
   word-break: keep-all; }
+
+.btn-back-to-courses {
+  background-color: #D500F9;
+  padding: 0.7rem;
+  color: #fff;
+  margin-bottom: 1rem; }
+  .btn-back-to-courses:hover {
+    background-color: #cc00ef; }
 
 .app-row {
   max-width: 71.25rem;

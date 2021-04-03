@@ -1,27 +1,24 @@
-
 /* Applly this class when its childrens are list-items and we don't want bullets*/
 .noBullets {
-  li{
+  li {
     list-style: none;
   }
 }
 
 /* By default Vuetify links are styled, to apply black color to them , use this class */
-.v-application .linkNavigationHeader {
-  color: #000;
-}
-.linkNavigationHeader {
-  font-size: 1.2rem;
-}
 
-.linkNavigationHeader {
-  &:hover{
-    color: $color-pinkviolet-medium;
-  }
-}
-/******************************************************************/
+/*******************************************************************/
 
-.no-word-break{
+.no-word-break {
   word-break: keep-all;
 }
 
+.btn-back-to-courses {
+  background-color: $color-pinkviolet-dark;
+  padding: 0.7rem;
+  color: $color-white-pure;
+  margin-bottom: 1rem;
+  &:hover {
+    background-color: darken($color-pinkviolet-dark, 2);
+  }
+}

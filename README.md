@@ -15,6 +15,7 @@ This app is inspired from Udemy and would try to copy core features of the udemy
 7.  https://abhyass.herokuapp.com/user/edit/profile
 8.  https://abhyass.herokuapp.com/teach/courses
 9.  https://abhyass.herokuapp.com/topic/express
+10. http://localhost:3000/teach/course/java-course/manage/curriculum
 
 ## Few routes remaining mainly:
 

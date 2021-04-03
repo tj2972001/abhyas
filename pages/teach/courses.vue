@@ -19,9 +19,11 @@
         >
           <strong>{{ Math.ceil(knowledge) }}% completed</strong>
         </v-progress-linear>
-        <button class="teacher-courses__list-item--manage-course">
-          Manage course &rarr;
-        </button>
+        <nuxt-link to="/teach/course/java-course/manage/basics">
+          <button class="teacher-courses__list-item--manage-course">
+            Manage course &rarr;
+          </button></nuxt-link
+        >
       </div>
       <div class="teacher-courses__list-item">
         <img
@@ -38,9 +40,11 @@
         >
           <strong>{{ Math.ceil(knowledge) }}% completed</strong>
         </v-progress-linear>
-        <button class="teacher-courses__list-item--manage-course">
-          Manage course &rarr;
-        </button>
+        <nuxt-link to="/teach/course/java-course/manage/basics">
+          <button class="teacher-courses__list-item--manage-course">
+            Manage course &rarr;
+          </button></nuxt-link
+        >
       </div>
       <div class="teacher-courses__list-item">
         <img
@@ -57,9 +61,11 @@
         >
           <strong>{{ Math.ceil(knowledge) }}% completed</strong>
         </v-progress-linear>
-        <button class="teacher-courses__list-item--manage-course">
-          Manage course &rarr;
-        </button>
+        <nuxt-link to="/teach/course/java-course/manage/basics">
+          <button class="teacher-courses__list-item--manage-course">
+            Manage course &rarr;
+          </button></nuxt-link
+        >
       </div>
       <div class="teacher-courses__list-item">
         <img
@@ -76,9 +82,11 @@
         >
           <strong>{{ Math.ceil(knowledge) }}% completed</strong>
         </v-progress-linear>
-        <button class="teacher-courses__list-item--manage-course">
-          Manage course &rarr;
-        </button>
+        <nuxt-link to="/teach/course/java-course/manage/basics">
+          <button class="teacher-courses__list-item--manage-course">
+            Manage course &rarr;
+          </button></nuxt-link
+        >
       </div>
     </div>
   </section>

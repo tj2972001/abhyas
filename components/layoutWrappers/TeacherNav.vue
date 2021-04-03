@@ -3,9 +3,11 @@
     <HeadingBlackH2 class="user-edit-wrapper__heading"
       >Instructor panel</HeadingBlackH2
     >
-    <button class="user-edit-wrapper__switch-btn">
-      Switch to Student view
-    </button>
+    <nuxt-link to="/">
+      <button class="user-edit-wrapper__switch-btn">
+        Switch to Student view
+      </button></nuxt-link
+    >
     <v-tabs class="user-edit-wrapper__options" next-icon prev-icon show-arrows>
       <v-tab
         v-for="option in profileEditOptions"
