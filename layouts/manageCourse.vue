@@ -6,7 +6,7 @@
         <h1 class="course-manage-course-title">
           VueJs: The Compleate Guide (2020)
         </h1>
-        <button class="btn-back-to-courses rounded-pill">
+        <button class="btn btn-medium btn-pinkviolet rounded-pill">
           Back to all courses
         </button>
       </div>
@@ -28,6 +28,7 @@
   align-items: center;
   justify-content: space-around;
 }
+
 .course-manage-course-title {
   margin: 2rem;
   font-weight: 700;

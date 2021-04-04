@@ -1,4 +1,4 @@
-export default function ({ redirect }) {
+export default function () {
   if (process.client) {
     if (window.innerWidth < 1200) {
       window.onNuxtReady(() => {

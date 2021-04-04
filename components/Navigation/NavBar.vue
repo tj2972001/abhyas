@@ -75,7 +75,7 @@ export default {
       }
     }
     &--search {
-      margin-left: 2rem;
+      margin-left: 10rem;
     }
     &--logo-nav {
       height: 3rem;
@@ -87,6 +87,7 @@ export default {
     }
     &--menu {
       text-decoration: none;
+      font-size: 1rem;
       &:hover {
         color: $color-pinkviolet-dark;
         transition: all 0.3s;

@@ -4,7 +4,9 @@
       >Instructor panel</HeadingBlackH2
     >
     <nuxt-link to="/">
-      <button class="user-edit-wrapper__switch-btn">
+      <button
+        class="user-edit-wrapper__switch-btn btn btn-medium btn-pinkviolet"
+      >
         Switch to Student view
       </button></nuxt-link
     >
@@ -72,9 +74,6 @@ export default {
     position: absolute;
     top: 1rem;
     right: 0;
-    background-color: $color-pinkviolet-light;
-    padding: 0.7rem;
-    color: $color-white-pure;
     border-radius: 5px;
   }
 }

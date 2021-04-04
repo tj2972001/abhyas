@@ -20,7 +20,9 @@
           <strong>{{ Math.ceil(knowledge) }}% completed</strong>
         </v-progress-linear>
         <nuxt-link to="/teach/course/java-course/manage/basics">
-          <button class="teacher-courses__list-item--manage-course">
+          <button
+            class="teacher-courses__list-item--manage-course btn btn-small btn-teal"
+          >
             Manage course &rarr;
           </button></nuxt-link
         >
@@ -41,7 +43,9 @@
           <strong>{{ Math.ceil(knowledge) }}% completed</strong>
         </v-progress-linear>
         <nuxt-link to="/teach/course/java-course/manage/basics">
-          <button class="teacher-courses__list-item--manage-course">
+          <button
+            class="teacher-courses__list-item--manage-course btn btn-small btn-teal"
+          >
             Manage course &rarr;
           </button></nuxt-link
         >
@@ -62,7 +66,9 @@
           <strong>{{ Math.ceil(knowledge) }}% completed</strong>
         </v-progress-linear>
         <nuxt-link to="/teach/course/java-course/manage/basics">
-          <button class="teacher-courses__list-item--manage-course">
+          <button
+            class="teacher-courses__list-item--manage-course btn btn-small btn-teal"
+          >
             Manage course &rarr;
           </button></nuxt-link
         >
@@ -83,7 +89,32 @@
           <strong>{{ Math.ceil(knowledge) }}% completed</strong>
         </v-progress-linear>
         <nuxt-link to="/teach/course/java-course/manage/basics">
-          <button class="teacher-courses__list-item--manage-course">
+          <button
+            class="teacher-courses__list-item--manage-course btn btn-small btn-teal"
+          >
+            Manage course &rarr;
+          </button></nuxt-link
+        >
+      </div>
+      <div class="teacher-courses__list-item">
+        <img
+          src="https://picsum.photos/400/250"
+          class="teacher-courses__list-item--image"
+        />
+        <div class="teacher-courses__list-item--title">vue complete pack</div>
+        <div class="teacher-courses__list-item--finish">Finish your course</div>
+        <v-progress-linear
+          v-model="knowledge"
+          class="teacher-courses__list-item--progress"
+          color="rgb(159, 207, 207)"
+          height="20"
+        >
+          <strong>{{ Math.ceil(knowledge) }}% completed</strong>
+        </v-progress-linear>
+        <nuxt-link to="/teach/course/java-course/manage/basics">
+          <button
+            class="teacher-courses__list-item--manage-course btn btn-small btn-teal"
+          >
             Manage course &rarr;
           </button></nuxt-link
         >
@@ -139,15 +170,7 @@ export default {
       }
     }
     &--manage-course {
-      background-color: $color-teal-dark;
-      padding: 0.5rem;
-      font-size: 0.8rem;
-      color: $color-white-pure;
-      border-radius: 5px;
-      margin-left: 1rem;
-      &:hover {
-        background-color: lighten($color-teal-dark, 2);
-      }
+      margin-left: 2rem;
     }
   }
 }

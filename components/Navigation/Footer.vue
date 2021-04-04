@@ -65,18 +65,17 @@ export default {}
     transition: all 0.2s;
     &:hover {
       text-decoration: underline;
-      color: $color-grey-dark;
     }
   }
   &__list-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     &--item {
       display: flex;
-      width: 50%;
-      margin-bottom: 0.2rem;
-      justify-content: space-between;
+      width: 33.3333%;
+      margin-bottom: 0.1rem;
+      justify-content: flex-start;
     }
   }
   &__rights {

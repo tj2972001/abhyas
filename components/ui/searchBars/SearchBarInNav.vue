@@ -5,9 +5,8 @@
       type="text"
       placeholder="Search for anything"
     />
-    <v-btn icon class="search-bar-main__icon"
-      ><fa-icon name="search"></fa-icon
-    ></v-btn>
+
+    <fa-icon name="search" class="search-bar-main__icon"></fa-icon>
   </div>
 </template>
 <style lang="scss" scoped>

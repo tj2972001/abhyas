@@ -12,13 +12,40 @@
 .no-word-break {
   word-break: keep-all;
 }
-
-.btn-back-to-courses {
-  background-color: $color-pinkviolet-dark;
+.btn {
+}
+.btn-medium {
   padding: 0.7rem;
-  color: $color-white-pure;
   margin-bottom: 1rem;
+}
+.btn-small {
+  padding: 0.5rem;
+  margin-bottom: 0.7rem;
+  border-radius: 0.4rem;
+  font-size: 0.7rem;
+}
+.btn-large {
+}
+.btn-pinkviolet {
+  background-color: $color-pinkviolet-dark;
+  color: $color-white-pure;
   &:hover {
     background-color: darken($color-pinkviolet-dark, 2);
   }
+}
+.btn-teal {
+  background-color: $color-teal-dark;
+  color: $color-white-pure;
+  &:hover {
+    background-color: darken($color-teal-dark, 2);
+  }
+}
+.btn-back-to-courses {
+}
+
+.vhl-list {
+  padding-bottom: 0.5rem !important;
+}
+.vhl-item {
+  padding: 0.7rem 0.5rem !important;
 }
